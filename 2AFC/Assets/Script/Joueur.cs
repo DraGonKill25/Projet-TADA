@@ -4,7 +4,7 @@ using classeCarac;
 namespace Joueur
 {
 
-    class Player : Caracteristique
+    public class Player : Caracteristique
     {
         protected Classe classe;
 

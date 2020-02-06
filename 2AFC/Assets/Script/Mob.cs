@@ -3,7 +3,7 @@ using classeCarac;
 
 namespace Monstre
 {
-    class Mobs : Caracteristique
+    public class Mobs : Caracteristique
     {
         protected Class classe;
         private Class mob_base;

@@ -5,7 +5,7 @@ using System;
 
 namespace classeCarac
 {
-    class Caracteristique
+    public class Caracteristique
     {
         protected int hp;
         protected int attaque;

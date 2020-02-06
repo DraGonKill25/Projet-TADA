@@ -4,13 +4,12 @@ using Joueur;
 
 namespace Sort
 {
-    class Spell : Player
+    public class Spell : Player
     {
-
-        private int mb_level;
         public static readonly int[] MALEDICTION = { 0, 5, 10, 15, 20 };
         public static readonly int[] BENEDICTION = { 0, 5, 10, 15, 20 };
-
+        private int mb_level;
+       
 
         public Spell()
         {
@@ -28,8 +27,47 @@ namespace Sort
         {
             return attaque * (1 - MALEDICTION[mb_level]);
         }
-
-
-
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+namespace Effect
+{
+    class Effet : Spell
+    {
+        public static readonly int[] MALEDICTION = { 0, 5, 10, 15, 20 };
+        public static readonly int[] BENEDICTION = { 0, 5, 10, 15, 20 };
+        protected Effet fire;
+        protected Effet freeze;
+        protected Effet stun;
+
+        public Effet()
+        {
+            this.fire;
+            this.freeze;
+            this.stun;
+        }
+    }   
+}*/
