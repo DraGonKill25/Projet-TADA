@@ -1,7 +1,4 @@
-﻿using classeCarac;
-using Joueur;
-using Sort;
-using System;
+﻿using System;
 
 namespace classeCarac
 {

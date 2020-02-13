@@ -1,10 +1,8 @@
 ﻿using System;
-using classeCarac;
 
 namespace Joueur
 {
-
-    public class Player : Caracteristique
+    public class Player : Object, Caracteristique
     {
         protected Classe classe;
 
@@ -13,15 +11,53 @@ namespace Joueur
         private Classe pretre;
         private Classe archer;
 
+        
+        
         public enum Classe
         {
             mage, epeiste, pretre, archer
         }
 
+        
+        
+        private Object equipement;
+
+        
+        
+        public void Equipement
+        {
+            get { return equipement; }
+        }
+
+        
+        
         public Classe GetClasseP
         {
             get { return classe; }
         }
+        
+        
+        public void WhichEquip(Classe perso)
+        {
+            testc = GetClasseP(perso);
+
+            switch (perso)
+            {
+                case (mage):
+
+            }
+        }
+
+
+
+        
+
+
+        public Equipement(Classe perso)
+        {
+            
+        }
+
 
         public void WitchClass()
         {

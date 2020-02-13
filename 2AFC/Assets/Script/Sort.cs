@@ -1,6 +1,4 @@
 ﻿using System;
-using classeCarac;
-using Joueur;
 
 namespace Sort
 {
@@ -27,6 +25,15 @@ namespace Sort
         {
             return attaque * (1 - MALEDICTION[mb_level]);
         }
+        
+        public void Attaque_de_base()
+        {
+            if (Player.GetClassP == archer)
+            {
+
+            }
+        }
+
     }
 }
 
