@@ -1,7 +1,6 @@
 ﻿using System;
-using classeCarac;
 
-namespace Monstre
+namespace test
 {
     public class Mobs : Caracteristique
     {

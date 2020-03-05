@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Joueur
+namespace test
 {
-    public class Player : Object, Caracteristique
+    public class Player : Object
     {
         protected Classe classe;
 
@@ -24,10 +24,10 @@ namespace Joueur
 
         
         
-        public void Equipement
+       /* public void Equipement
         {
             get { return equipement; }
-        }
+        }*/
 
         
         

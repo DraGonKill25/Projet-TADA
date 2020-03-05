@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Sort
+namespace test
 {
     public class Spell : Player
     {
-        public static readonly int[] MALEDICTION = { 0, 5, 10, 15, 20 };
+       /* public static readonly int[] MALEDICTION = { 0, 5, 10, 15, 20 };
         public static readonly int[] BENEDICTION = { 0, 5, 10, 15, 20 };
         private int mb_level;
        
@@ -32,7 +32,7 @@ namespace Sort
             {
 
             }
-        }
+        }*/
 
     }
 }

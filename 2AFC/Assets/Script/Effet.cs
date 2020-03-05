@@ -1,7 +1,7 @@
 ﻿using System;
 using Sort;
 
-namespace Effect 
+namespace test 
 {
     public class Effet : Spell
     {

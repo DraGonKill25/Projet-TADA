@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace classeCarac
+namespace test
 {
-    public class Caracteristique
+    public class Caracteristique : Object
     {
         protected int hp;
         protected int attaque;
