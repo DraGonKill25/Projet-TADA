@@ -1,8 +1,9 @@
 ﻿using System;
 
+
 namespace test
 {
-    public class Player : Object
+    public class Player : Caracteristique
     {
         protected Classe classe;
 
@@ -20,7 +21,7 @@ namespace test
 
         
         
-        private Object equipement;
+        private Objet equipement;
 
         
         
@@ -37,7 +38,7 @@ namespace test
         }
         
         
-        public void WhichEquip(Classe perso)
+        /*public void WhichEquip(Classe perso)
         {
             testc = GetClasseP(perso);
 
@@ -46,17 +47,17 @@ namespace test
                 case (mage):
 
             }
-        }
+        }*/
 
 
 
         
 
 
-        public Equipement(Classe perso)
+        /*public Equipement(Classe perso)
         {
             
-        }
+        }*/
 
 
         public void WitchClass()

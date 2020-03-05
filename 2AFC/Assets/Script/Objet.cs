@@ -4,14 +4,14 @@ namespace test
 {
     public class Object
     {
-        protected Object epee;
-        protected Object bouclier;
-        protected Object arc;
-        protected Object baton;
-        protected Object sceptre;
-        protected Object potion;
+        protected Objet epee;
+        protected Objet bouclier;
+        protected Objet arc;
+        protected Objet baton;
+        protected Objet sceptre;
+        protected Objet potion;
 
-        public enum Object
+        public enum Objet
         {
             EPEE, BOUCLIER, ARC, BATON, SCEPTRE, POTION
         }
@@ -20,35 +20,35 @@ namespace test
         public Object()
         {
             this.epee = epee;
-            this.bouclier;
-            this.arc;
-            this.baton;
-            this.sceptre;
-            this.potion;
+            this.bouclier=bouclier;
+            this.arc = arc;
+            this.baton=baton;
+            this.sceptre=sceptre;
+            this.potion=potion;
         }
 
-        public Object epee
+        /*public Objet Epee
         {
             get => epee;
             set => 6;
         }
 
-        public Object baton
+        public Objet Baton
         {
-            get => down;
+            get => baton;
             set => 8;
         }
 
-        public Object arc
+        public Objet Arc
         {
             get => arc;
             set => 7;
         }
 
-        public Object sceptre
+        public Objet Sceptre
         {
             get => sceptre;
             set => 6;
-        }
+        }*/
     }
 }

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8930190d-2c16-4320-b033-fd3eef533d23" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Photon.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/DgramEncryptWin64.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/DgramEncryptWin64.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/DgramEncryptWin64/PhotonEncryptorPlugin.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/DgramEncryptWin64/PhotonEncryptorPlugin.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/Metro/Photon3Unity3D.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/Metro/Photon3Unity3D.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/Metro/Photon3Unity3D.pri.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/Metro/Photon3Unity3D.pri.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/Photon3Unity3D.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/Photon3Unity3D.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/Photon3Unity3D.xml.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/Photon3Unity3D.xml.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/WebSocket/WebSocket.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/WebSocket/WebSocket.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/WebSocket/WebSocket.jslib.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/WebSocket/WebSocket.jslib.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/WebSocket/websocket-sharp.README.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/WebSocket/websocket-sharp.README.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonLibs/WebSocket/websocket-sharp.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonLibs/WebSocket/websocket-sharp.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonRealtime.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonRealtime.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonRealtime/Code.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonRealtime/Code.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonRealtime/Code/ConnectionHandler.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonRealtime/Code/ConnectionHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonRealtime/Demos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonRealtime/Demos.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonRealtime/Demos/DemoLoadBalancing/Jura-Medium-LB.ttf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonRealtime/Demos/DemoLoadBalancing/Jura-Medium-LB.ttf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Code.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Code.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Code/Editor/PunSceneSettingsFile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Code/Editor/PunSceneSettingsFile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Editor/PunDemos.DemoHubEditor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Editor/PunDemos.DemoHubEditor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Editor/PunDemos.DemoHubEditor.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Editor/PunDemos.DemoHubEditor.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/Gradient.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/Gradient.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/OutlinedSquaredBox.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/OutlinedSquaredBox.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/PunIcon-White-129.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/PunIcon-White-129.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/toHub.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoHub/Sprites/toHub.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/PunDemos.DemoSlotcarEditor.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/PunDemos.DemoSlotcarEditor.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/PunDemos.DemoSlotcarEditor.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/PunDemos.DemoSlotcarEditor.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/SlotCar-Scene/LightingData.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/SlotCar-Scene/LightingData.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/SlotCar-Scene/ReflectionProbe-0.exr.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/SlotCar-Scene/ReflectionProbe-0.exr.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/Shared Assets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/Shared Assets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/DropDown Arrow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/DropDown Arrow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/DropDown CheckMark.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Demos/Shared Assets/Skin/DropDown CheckMark.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIcon-128.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIcon-128.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIconApp128.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIconApp128.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIconApp32.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIconApp32.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIconApp48.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIconApp48.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIconApp512.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Icons/PunIconApp512.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../Photon/PhotonUnityNetworking/Resources/PhotonServerSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestConnect.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/TestConnect.cs.meta" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\EPITA\Projet-TADA\2AFC\Assets\Script\.idea\.idea.Script.dir\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YGbf6oyumUz6JpF1nxbR5bxjMD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8930190d-2c16-4320-b033-fd3eef533d23" name="Default Changelist" comment="" />
+      <created>1582571979668</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582571979668</updated>
+      <workItem from="1582571983619" duration="5000" />
+      <workItem from="1582572044569" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+</project>

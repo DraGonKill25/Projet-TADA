@@ -4,7 +4,7 @@ namespace test
 {
     public class Spell : Player
     {
-       /* public static readonly int[] MALEDICTION = { 0, 5, 10, 15, 20 };
+        public static readonly int[] MALEDICTION = { 0, 5, 10, 15, 20 };
         public static readonly int[] BENEDICTION = { 0, 5, 10, 15, 20 };
         private int mb_level;
        
@@ -26,7 +26,7 @@ namespace test
             return attaque * (1 - MALEDICTION[mb_level]);
         }
         
-        public void Attaque_de_base()
+        /*public void Attaque_de_base()
         {
             if (Player.GetClassP == archer)
             {
