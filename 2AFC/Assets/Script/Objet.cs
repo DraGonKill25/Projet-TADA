@@ -1,54 +1,28 @@
 ﻿using System;
 
-namespace test
+namespace JeuxVideal
 {
     public class Object
-    {
-        protected Objet epee;
-        protected Objet bouclier;
-        protected Objet arc;
-        protected Objet baton;
-        protected Objet sceptre;
-        protected Objet potion;
+    {        
+        public static readonly long[] POTION   = { 7 , 30 , 75  , 105 , 142 };
+
+        private int lvl;
+
+        public int Lvl
+        {
+            get { return lvl; }
+        }
 
         public enum Objet
         {
             EPEE, BOUCLIER, ARC, BATON, SCEPTRE, POTION
         }
 
+        protected Objet obj;
 
-        public Object()
+        public Objet Obj
         {
-            this.epee = epee;
-            this.bouclier=bouclier;
-            this.arc = arc;
-            this.baton=baton;
-            this.sceptre=sceptre;
-            this.potion=potion;
+           get { return obj; } 
         }
-
-        /*public Objet Epee
-        {
-            get => epee;
-            set => 6;
-        }
-
-        public Objet Baton
-        {
-            get => baton;
-            set => 8;
-        }
-
-        public Objet Arc
-        {
-            get => arc;
-            set => 7;
-        }
-
-        public Objet Sceptre
-        {
-            get => sceptre;
-            set => 6;
-        }*/
     }
 }
