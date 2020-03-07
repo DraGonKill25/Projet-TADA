@@ -493,7 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsGameLoaded: 1
   currentScene: 0
-  MultiplayerScene: 1
+  MultiplayerScene: 2
   playersInRoom: 0
   myNumberInRoom: 0
   playerInGame: 0
