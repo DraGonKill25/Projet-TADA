@@ -1,25 +1,17 @@
 ﻿using System;
 
-namespace test 
+namespace JeuxVideal 
 {
-    public class Effet : Caracteristique
+    public class Effet : Player
     {
-       /* public static readonly int[] MALEDICTION = { 0, 5, 10, 15, 20 };
+        public static readonly int[] MALEDICTION = { 0, 5, 10, 15, 20 };
         public static readonly int[] BENEDICTION = { 0, 5, 10, 15, 20 };
-        protected Effet fire;
-        protected Effet freeze;
-        protected Effet stun;
+        protected bool fire;
+        protected bool freeze;
+        protected bool stun;
 
-
-        public Effet()
+        /*public bool Fire()
         {
-            
-        }
-
-
-        public void CastEffect()
-        {
-            
         }*/
     }
 }
