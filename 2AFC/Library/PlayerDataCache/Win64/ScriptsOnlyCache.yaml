@@ -61,27 +61,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11206}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11388}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 11432}
+      Script: {instanceID: 11684}
     - Class: 114
-      Script: {instanceID: 11716}
+      Script: {instanceID: 11968}
     - Class: 114
-      Script: {instanceID: 11868}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 12254}
     - Class: 114
-      Script: {instanceID: 12302}
+      Script: {instanceID: 12554}
     - Class: 114
-      Script: {instanceID: 12842}
+      Script: {instanceID: 13094}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 13174}
     - Class: 114
-      Script: {instanceID: 13180}
+      Script: {instanceID: 13430}
     - Class: 114
-      Script: {instanceID: 13254}
+      Script: {instanceID: 13504}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -130,41 +130,43 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11206}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11432}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 11868}
+      Script: {instanceID: 11684}
     - Class: 114
-      Script: {instanceID: 11900}
+      Script: {instanceID: 12118}
     - Class: 114
-      Script: {instanceID: 12002}
+      Script: {instanceID: 12152}
     - Class: 114
-      Script: {instanceID: 12006}
+      Script: {instanceID: 12254}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 12258}
     - Class: 114
-      Script: {instanceID: 12302}
+      Script: {instanceID: 12438}
     - Class: 114
-      Script: {instanceID: 12354}
+      Script: {instanceID: 12554}
     - Class: 114
-      Script: {instanceID: 12544}
+      Script: {instanceID: 12606}
     - Class: 114
-      Script: {instanceID: 12558}
+      Script: {instanceID: 12798}
     - Class: 114
-      Script: {instanceID: 12774}
+      Script: {instanceID: 12812}
     - Class: 114
-      Script: {instanceID: 12842}
+      Script: {instanceID: 13026}
     - Class: 114
-      Script: {instanceID: 13020}
+      Script: {instanceID: 13094}
     - Class: 114
-      Script: {instanceID: 13136}
+      Script: {instanceID: 13270}
     - Class: 114
-      Script: {instanceID: 13140}
+      Script: {instanceID: 13386}
     - Class: 114
-      Script: {instanceID: 13180}
+      Script: {instanceID: 13390}
     - Class: 114
-      Script: {instanceID: 13254}
+      Script: {instanceID: 13430}
+    - Class: 114
+      Script: {instanceID: 13504}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -194,9 +196,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
     - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -205,7 +217,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 12222}
+      Script: {instanceID: 12474}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -551,7 +563,7 @@ ScriptsOnlyBuild:
     className: PhotonPlayer
   - hash:
       serializedVersion: 2
-      Hash: f330e8e314b68adb3a331d6880acc122
+      Hash: 2fd0d88fc88d53ab80c2b2d26d888175
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovements
@@ -1100,4 +1112,4 @@ ScriptsOnlyBuild:
   - Assets/Scene/Main_Menu.unity
   - Assets/Scene/Main.unity
   - Assets/Scene/Multiplayer.unity
-  playerPath: C:/Users/Tanguy/2AFC/Projet-TADA/2AFC/Builds/2AFC.exe
+  playerPath: C:/EPITA/Projet-TADA/2AFC/Builds/2AFC.exe

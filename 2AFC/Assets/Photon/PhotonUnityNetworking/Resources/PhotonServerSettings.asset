@@ -31,8 +31,5 @@ MonoBehaviour:
   RpcList:
   - ClickRpc
   - DestroyRpc
-  - DestroySpaceship
-  - Fire
-  - RespawnSpaceship
   DisableAutoOpenWizard: 1
   ShowSettings: 1
