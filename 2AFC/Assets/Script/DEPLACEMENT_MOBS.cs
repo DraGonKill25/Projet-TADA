@@ -43,11 +43,5 @@ public class DEPLACEMENT_MOBS : MonoBehaviour
                 transform.Rotate(Vector3.up * Random.Range(145, 230));
             }
         }
-
-        
-
-        
-
-
     }
 }
