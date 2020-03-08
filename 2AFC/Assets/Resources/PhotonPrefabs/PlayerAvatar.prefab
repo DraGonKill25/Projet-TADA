@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578232759}
   m_LocalRotation: {x: 0.11679614, y: -0, z: -0, w: 0.9931559}
-  m_LocalPosition: {x: -0, y: 1.13, z: -2.62}
+  m_LocalPosition: {x: -0, y: 2, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2760596885407728273}
@@ -347,3 +347,11 @@ MonoBehaviour:
   rotationSpeed: 300
   playercamera: {fileID: 1578232759}
   camera: {fileID: 1578232762}
+  Gravity: -14
+  Ground:
+    serializedVersion: 2
+    m_Bits: 0
+  GroundDistance: 0.2
+  JumpHeight: 3
+  DashDistance: 5
+  Drag: {x: 0, y: 0, z: 0}
