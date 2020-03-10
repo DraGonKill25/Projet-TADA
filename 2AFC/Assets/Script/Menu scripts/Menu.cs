@@ -4,7 +4,14 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
-{    public void LaunchPlayGameMenu()
+{
+    public void Start()
+    {
+        Pause.paused = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+    public void LaunchPlayGameMenu()
     {
         SceneManager.LoadScene("Main");
     }
