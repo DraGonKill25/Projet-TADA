@@ -27,10 +27,10 @@ public class PlayerMovements : MonoBehaviour
 
 
 
-
     void Start()
     {
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
         PV = GetComponent<PhotonView>();
         myCC = GetComponent<CharacterController>();
         if (PV.IsMine)
@@ -47,9 +47,20 @@ public class PlayerMovements : MonoBehaviour
 
     void Update()
     {
-        if (PV.IsMine)
-        {
+        bool pause = Input.GetKeyDown(KeyCode.Escape);
 
+        if(pause)
+        {
+            GameObject.Find("Pause").GetComponent<Pause>().TogglePause();
+        }
+
+        if(Pause.paused)
+        {
+            pause = false;
+        }
+
+        if (PV.IsMine && !Pause.paused)
+        {
             BasicMovement();
             BasicRotation();
         }

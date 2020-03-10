@@ -2,6 +2,8 @@
 # Default Collab Ignore Rules
 # ===========================
 
+Library/
+
 # OS Generated
 # ============
 .DS_Store
