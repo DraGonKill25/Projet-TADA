@@ -49,12 +49,12 @@ public class PlayerMovements : MonoBehaviour
     {
         bool pause = Input.GetKeyDown(KeyCode.Escape);
 
-        if (pause)
+        if(pause)
         {
             GameObject.Find("Pause").GetComponent<Pause>().TogglePause();
         }
 
-        if (Pause.paused)
+        if(Pause.paused)
         {
             pause = false;
         }
@@ -72,7 +72,16 @@ public class PlayerMovements : MonoBehaviour
 
         _velocity.y += Gravity * Time.deltaTime;
         myCC.Move(_velocity * Time.deltaTime);
-
+        
+        
+        if(Input.GetKey(KeyCode.Space)&& myCC.isGrounded)
+        {
+            _velocity.y += Mathf.Sqrt(JumpHeight * -2f * Gravity);
+            _velocity.x = Input.GetAxis("Horizontal");
+            _velocity.z = Input.GetAxis("Vertical");
+        }
+        
+        
         /*_velocity.x /= 1 + Drag.x * Time.deltaTime;
         _velocity.y /= 1 + Drag.y * Time.deltaTime;
         _velocity.z /= 1 + Drag.z * Time.deltaTime;*/
@@ -101,13 +110,7 @@ public class PlayerMovements : MonoBehaviour
             myCC.Move(transform.right * Time.deltaTime * movementSpeed);
         }
 
-        if (Input.GetKey(KeyCode.Space) && myCC.isGrounded)
-        {
-            _velocity.y += Mathf.Sqrt(JumpHeight * -2f * Gravity);
-            _velocity.x = Input.GetAxis("Horizontal");
-            _velocity.z = Input.GetAxis("Vertical");
-
-        }
+        
 
         /*if (Input.GetKey(KeyCode.LeftShift)) 
         {
@@ -121,20 +124,20 @@ public class PlayerMovements : MonoBehaviour
     {
         float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * rotationSpeed;
         transform.Rotate(new Vector3(0, mouseX, 0));
-
+        
         float mouseY = -Input.GetAxis("Mouse Y") * Time.deltaTime * rotationSpeed;
 
-        if (camera.position.y < transform.localScale.y + 5 && mouseY > 0)
-        {
-            camera.position += (new Vector3(0, mouseY / 15, 0));
-            camera.Rotate(new Vector3(mouseY / 2, 0, 0));
-        }
+         if (camera.position.y<transform.localScale.y+5 && mouseY>0 )
+         {
+             camera.position += (new Vector3(0, mouseY / 15, 0));
+             camera.Rotate (new Vector3( mouseY/2,0, 0)); 
+         }
 
-        if (camera.position.y > transform.position.y - transform.localScale.y + 1 && mouseY < 0)
-        {
-            camera.position += (new Vector3(0, mouseY / 15, 0));
-            camera.Rotate(new Vector3(mouseY / 2, 0, 0));
-        }
+         if (camera.position.y >transform.position.y-transform.localScale.y+1 && mouseY< 0 )
+         {
+             camera.position += (new Vector3(0, mouseY / 15, 0));
+             camera.Rotate(new Vector3( mouseY/2, 0,0));
+         }
     }
 }
 
