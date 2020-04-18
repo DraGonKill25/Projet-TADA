@@ -36,4 +36,4 @@ MonoBehaviour:
   - RPC_ReceivePing
   - RPC_RequestMasterClient
   DisableAutoOpenWizard: 1
-  ShowSettings: 1
+  ShowSettings: 0
