@@ -14,10 +14,10 @@ public class playercontroller : MonoBehaviour
     public int RunSpeed = 10;
 
     //cooldown on speel and atk
-    public float CooldownTime1 = 5;
+    public float CooldownTime1 = 2;
     public float CooldownTime2 = 5;
-    public float CooldownTime3 = 5;
-    public float CooldownTimeblock = 5;
+    public float CooldownTime3 = 15;
+    public float CooldownTimeblock = 7;
     private float nextcast1 = 0;
     private float nextcast2 = 0;
     private float nextcast3 = 0;
@@ -127,7 +127,7 @@ public class playercontroller : MonoBehaviour
         if (Time.time > nextcast3)
         {
             if (Input.GetKey(KeyCode.Alpha3))
-            {
+            {   
                 Anim.SetTrigger("ATK3");
                 nextcast3 = Time.time + CooldownTime3;
             }

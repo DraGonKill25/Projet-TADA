@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 269002567646617601}
   - component: {fileID: -8858689166359114043}
   - component: {fileID: 7504387225988929046}
+  - component: {fileID: -6422428307400004305}
   m_Layer: 0
   m_Name: PlayerAvatar
   m_TagString: Untagged
@@ -355,3 +356,19 @@ MonoBehaviour:
   JumpHeight: 3
   DashDistance: 5
   Drag: {x: 0, y: 0, z: 0}
+--- !u!114 &-6422428307400004305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7553789887518631790}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 426b6f6a0d88ac44b9dccc197e17375e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 5
+  Sensi: 0
+  Jump: 5
+  Gravity: 20
