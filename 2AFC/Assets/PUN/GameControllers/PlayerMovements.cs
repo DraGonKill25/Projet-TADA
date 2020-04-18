@@ -127,13 +127,13 @@ public class PlayerMovements : MonoBehaviour
         
         float mouseY = -Input.GetAxis("Mouse Y") * Time.deltaTime * rotationSpeed;
 
-         if (camera.position.y<transform.localScale.y+5 && mouseY>0 )
+         if (camera.position.y< transform.position.y+transform.localScale.y+5 && mouseY>0 )
          {
              camera.position += (new Vector3(0, mouseY / 15, 0));
              camera.Rotate (new Vector3( mouseY/2,0, 0)); 
          }
 
-         if (camera.position.y >transform.position.y-transform.localScale.y+1 && mouseY< 0 )
+         if (camera.position.y >transform.position.y-transform.localScale.y+0.5 && mouseY< 0 )
          {
              camera.position += (new Vector3(0, mouseY / 15, 0));
              camera.Rotate(new Vector3( mouseY/2, 0,0));

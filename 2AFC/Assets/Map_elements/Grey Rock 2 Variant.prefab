@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!136 &4691842062096761096
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6766892716061466752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.6568916
+  m_Height: 1.7227212
+  m_Direction: 1
+  m_Center: {x: -0.00687021, y: 0.86520153, z: -0.032851398}
+--- !u!1001 &3371287389921802633
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 326.37744
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.00000047683716
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -833.0781
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 8ccd75086d79b08479206a6a9f89d962,
+        type: 3}
+      propertyPath: m_Name
+      value: Grey Rock 2
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: -6860895033569716450, guid: 8ccd75086d79b08479206a6a9f89d962, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 8ccd75086d79b08479206a6a9f89d962, type: 3}
+--- !u!1 &6766892716061466752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8ccd75086d79b08479206a6a9f89d962,
+    type: 3}
+  m_PrefabInstance: {fileID: 3371287389921802633}
+  m_PrefabAsset: {fileID: 0}
