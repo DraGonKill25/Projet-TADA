@@ -31,5 +31,9 @@ MonoBehaviour:
   RpcList:
   - ClickRpc
   - DestroyRpc
+  - RPC_ChangeReadyState
+  - RPC_MasterClientGranted
+  - RPC_ReceivePing
+  - RPC_RequestMasterClient
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
