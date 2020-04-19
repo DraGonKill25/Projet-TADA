@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playercontroller : MonoBehaviour
 {
-    public int Speed = 5;
+    /*public int Speed = 5;
     private Vector3 Deplacement = Vector3.zero;
     private CharacterController Player;
     public int Sensi = 10;
@@ -21,19 +21,29 @@ public class playercontroller : MonoBehaviour
     private float nextcast1 = 0;
     private float nextcast2 = 0;
     private float nextcast3 = 0;
-    private float nextcastblock = 0;
+    private float nextcastblock = 0;*/
 
+    public float Speed = 2f;
+    public float rotateSpeed = 30f;
+    Animator MyPlayerAnimator;
 
     // Start is called before the first frame update
     void Start()
     {
+        /*
         Player = GetComponent<CharacterController>();
-        Anim = GetComponent<Animator>();
+        Anim = GetComponent<Animator>();*/
+        MyPlayerAnimator = GetComponent<Animator>();
+        if (MyPlayerAnimator == null)
+        {
+            Debug.LogError("Erreur pour trouver l'objet");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
         Deplacement.z = Input.GetAxisRaw("Vertical");
         Deplacement.x = Input.GetAxisRaw("Horizontal");
         Deplacement = transform.TransformDirection(Deplacement);
@@ -140,6 +150,66 @@ public class playercontroller : MonoBehaviour
                 Anim.SetTrigger("Block");
                 nextcastblock = Time.time + CooldownTimeblock;
             }
+        }*/
+
+        Vector3 vv = new Vector3(0, 0, 0);
+        float delta = Time.deltaTime * Speed;
+
+        if (Input.GetKey(KeyCode.Z))
+        {
+            vv = Vector3.forward;
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                delta = delta * 3;
+            }
         }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            vv = Vector3.back;
+        }
+
+        float h = Input.GetAxis("Mouse X");
+        if ((h>0) || Input.GetKey(KeyCode.D))
+        {
+            RotatePerso(1);
+        }
+        if ((h<0) || Input.GetKey(KeyCode.Q))
+        {
+            RotatePerso(-1);
+        }
+        transform.Translate(delta * vv);
+
+        MyPlayerAnimator.SetFloat("Speed", (delta * vv).magnitude);
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            MyPlayerAnimator.SetInteger("Attack", 1);
+        }
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            MyPlayerAnimator.SetInteger("Attack", 2);
+        }
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            MyPlayerAnimator.SetInteger("Attack", 3);
+        }
+
+        if (Input.GetKey(KeyCode.F))
+        {
+            MyPlayerAnimator.SetInteger("Attack", 4);
+        }
+    }
+
+    private void RotatePerso(int direction)
+    {
+        float deltaRotate = Time.deltaTime * rotateSpeed;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            deltaRotate = deltaRotate * 4;
+        }
+        transform.Rotate(Vector3.up * deltaRotate * direction);
     }
 }
