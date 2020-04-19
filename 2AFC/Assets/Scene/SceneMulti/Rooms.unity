@@ -2265,8 +2265,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerListingMenu: {fileID: 1516563435}
   _leaveRoomMenu: {fileID: 1018023197}
-  _readyButton: {fileID: 265521505}
-  _startButton: {fileID: 2027225583}
+  _readyButton: {fileID: 1747589420}
+  _startButton: {fileID: 924448968}
 --- !u!1 &883324059
 GameObject:
   m_ObjectHideFlags: 0
@@ -3153,6 +3153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1516563434}
   - component: {fileID: 1516563435}
+  - component: {fileID: 1516563436}
   m_Layer: 0
   m_Name: PlayerListingMenu
   m_TagString: Untagged
@@ -3198,6 +3199,28 @@ MonoBehaviour:
   _playerListing: {fileID: 1876751614939251294, guid: d9da7e4b93e7c4f4eba58b06c95bbab0,
     type: 3}
   _readyText: {fileID: 1633102997}
+--- !u!114 &1516563436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516563433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 0
+  OwnershipTransfer: 0
+  ObservedComponents:
+  - {fileID: 0}
+  viewIdField: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1535848625
 GameObject:
   m_ObjectHideFlags: 0
@@ -5117,10 +5140,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09a433fa19f329429a61e479368eddd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerListingMenu: {fileID: 0}
-  _leaveRoomMenu: {fileID: 0}
-  _readyButton: {fileID: 0}
-  _startButton: {fileID: 0}
+  _playerListingMenu: {fileID: 1516563435}
+  _leaveRoomMenu: {fileID: 1018023197}
+  _readyButton: {fileID: 1747589420}
+  _startButton: {fileID: 924448968}
 --- !u!114 &2092889979
 MonoBehaviour:
   m_ObjectHideFlags: 0
