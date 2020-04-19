@@ -495,7 +495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playercamera: {fileID: 3278754152972401416}
   camera: {fileID: 7023091030457716439}
-  movementSpeed: 3
+  movementSpeed: 20
   rotationSpeed: 50
   GroundDistance: 1
   JumpHeight: 5
@@ -521,7 +521,7 @@ MonoBehaviour:
   Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 8060992736187549108}
   - {fileID: 2675833136210557992}
   viewIdField: 0
   InstantiationId: 0

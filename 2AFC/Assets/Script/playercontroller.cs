@@ -94,10 +94,11 @@ public class playercontroller : MonoBehaviour
             BasicRotation();
         }
 
+        
         _isGrounded = Physics.CheckSphere(_groundChecker.position, GroundDistance, Ground, QueryTriggerInteraction.Ignore);
         if (_isGrounded && _velocity.y < 0)
             _velocity.y = 0f;
-
+            
 
         _velocity.y += Gravity * Time.deltaTime;
         Player.Move(_velocity * Time.deltaTime);
