@@ -454,7 +454,7 @@ GameObject:
   - component: {fileID: 4667740510255027625}
   - component: {fileID: 559948270729025209}
   m_Layer: 0
-  m_Name: Warrior_Man
+  m_Name: premier_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -487,7 +487,7 @@ Animator:
   m_GameObject: {fileID: 1544794156049741411}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a900fce6e2f37fe46a2e73b16c827273, type: 3}
-  m_Controller: {fileID: 9100000, guid: 77850a91d6cfd204bb787ac38b05e030, type: 2}
+  m_Controller: {fileID: 9100000, guid: bb4a5ceaf5f92994c9e0c77e24999582, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
