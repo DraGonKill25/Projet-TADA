@@ -123,7 +123,7 @@ public class PlayerListingMenu : MonoBehaviourPunCallbacks
 
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;
-            PhotonNetwork.LoadLevel(1); //build index scene (in build settings)
+            PhotonNetwork.LoadLevel(2); //build index scene (in build settings)
         }
     }
 
