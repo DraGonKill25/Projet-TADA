@@ -2200,7 +2200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7888f06e52786ff46bdbdb76d9d16bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill: {fileID: 11400000, guid: 203a3a521d945be44a088d8199a7fcc2, type: 2}
+  skill: {fileID: 11400000, guid: b7e3d850dccd95643bed146ace495296, type: 2}
   skillName: {fileID: 4761881439682310085}
   skillDescription: {fileID: 0}
   skillIcon: {fileID: 6845036770177998139}
@@ -5304,7 +5304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7888f06e52786ff46bdbdb76d9d16bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill: {fileID: 11400000, guid: 3fa64b25b90347a4880de7564fdc955d, type: 2}
+  skill: {fileID: 11400000, guid: 933264bd398ee1744a7d67ffa38f2ac5, type: 2}
   skillName: {fileID: 251129707513783521}
   skillDescription: {fileID: 0}
   skillIcon: {fileID: 4596823257197598951}
@@ -5767,7 +5767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7888f06e52786ff46bdbdb76d9d16bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill: {fileID: 11400000, guid: 590f428e64211a941a8ae39a0776dfb8, type: 2}
+  skill: {fileID: 11400000, guid: c09839814087e534caaad78cc745a013, type: 2}
   skillName: {fileID: 5924410316611224127}
   skillDescription: {fileID: 0}
   skillIcon: {fileID: 7203612327919516873}
@@ -7282,7 +7282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7888f06e52786ff46bdbdb76d9d16bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill: {fileID: 11400000, guid: 203a3a521d945be44a088d8199a7fcc2, type: 2}
+  skill: {fileID: 11400000, guid: 04f689bd9f89c1f4a82d80516b7f6623, type: 2}
   skillName: {fileID: 3689390353089688289}
   skillDescription: {fileID: 0}
   skillIcon: {fileID: 7863592754650864890}
@@ -7439,7 +7439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7888f06e52786ff46bdbdb76d9d16bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill: {fileID: 11400000, guid: 3fa64b25b90347a4880de7564fdc955d, type: 2}
+  skill: {fileID: 11400000, guid: d3db081fc6ce7c743a22f7a26f9b1d90, type: 2}
   skillName: {fileID: 5190409945686432097}
   skillDescription: {fileID: 0}
   skillIcon: {fileID: 591858689258159301}
@@ -7892,7 +7892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7888f06e52786ff46bdbdb76d9d16bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill: {fileID: 11400000, guid: 590f428e64211a941a8ae39a0776dfb8, type: 2}
+  skill: {fileID: 11400000, guid: d17d142750644f946951f63550b3b647, type: 2}
   skillName: {fileID: 8279724098294835929}
   skillDescription: {fileID: 0}
   skillIcon: {fileID: 1791286457429551824}
