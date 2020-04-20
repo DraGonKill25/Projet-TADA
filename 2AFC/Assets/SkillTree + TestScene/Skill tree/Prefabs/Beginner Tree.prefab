@@ -27,7 +27,7 @@ RectTransform:
   m_GameObject: {fileID: 22681477571198003}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 7076574722383204493}
   m_RootOrder: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -400,7 +400,7 @@ RectTransform:
   m_GameObject: {fileID: 697891450033189602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1268624617433231740}
   m_RootOrder: 0
@@ -431,7 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1000,7 +1000,7 @@ RectTransform:
   m_GameObject: {fileID: 1758106844556987097}
   m_LocalRotation: {x: -0, y: 0, z: -0.9396927, w: -0.34202012}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8878269343073476117}
   m_RootOrder: 2
@@ -1031,7 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1225,7 +1225,7 @@ RectTransform:
   m_GameObject: {fileID: 2568485687438154605}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 9018672547770729312}
   m_RootOrder: 0
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1930,7 +1930,7 @@ RectTransform:
   m_GameObject: {fileID: 3160101474678258757}
   m_LocalRotation: {x: 0, y: -0, z: 0.9396927, w: -0.3420201}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8878269343073476117}
   m_RootOrder: 1
@@ -1961,7 +1961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2207,7 +2207,8 @@ MonoBehaviour:
   skillMonsterPointNeeded: {fileID: 2162073496135041071}
   skillAttribute: {fileID: 8886479043723562759}
   skillAttrAmount: {fileID: 7296627989104049640}
-  parentSkill: []
+  parentSkill:
+  - {fileID: 11400000, guid: 203a3a521d945be44a088d8199a7fcc2, type: 2}
   PlayerHandler: {fileID: 0}
 --- !u!1 &3353884614446466045
 GameObject:
@@ -2308,7 +2309,10 @@ MonoBehaviour:
   skillMonsterPointNeeded: {fileID: 5321378705415808421}
   skillAttribute: {fileID: 2907487636057994365}
   skillAttrAmount: {fileID: 5238640518363556273}
-  parentSkill: []
+  parentSkill:
+  - {fileID: 11400000, guid: d17d142750644f946951f63550b3b647, type: 2}
+  - {fileID: 11400000, guid: d3db081fc6ce7c743a22f7a26f9b1d90, type: 2}
+  - {fileID: 11400000, guid: 04f689bd9f89c1f4a82d80516b7f6623, type: 2}
   PlayerHandler: {fileID: 0}
 --- !u!114 &3796980038019036441
 MonoBehaviour:
@@ -2699,7 +2703,7 @@ RectTransform:
   m_GameObject: {fileID: 3606753796802543879}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 5852567228005183885}
   m_RootOrder: 0
@@ -2730,7 +2734,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2845,7 +2849,7 @@ RectTransform:
   m_GameObject: {fileID: 3858049214412039996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1197409163528800676}
   m_RootOrder: 0
@@ -2876,7 +2880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3843,7 +3847,7 @@ RectTransform:
   m_GameObject: {fileID: 5040247168676748931}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 8878269343073476117}
   m_RootOrder: 0
@@ -3874,7 +3878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5307,7 +5311,8 @@ MonoBehaviour:
   skillMonsterPointNeeded: {fileID: 8131448014160859083}
   skillAttribute: {fileID: 6240842800991443081}
   skillAttrAmount: {fileID: 3760855376290022624}
-  parentSkill: []
+  parentSkill:
+  - {fileID: 11400000, guid: 3fa64b25b90347a4880de7564fdc955d, type: 2}
   PlayerHandler: {fileID: 0}
 --- !u!1 &6564006553456348446
 GameObject:
@@ -5769,7 +5774,8 @@ MonoBehaviour:
   skillMonsterPointNeeded: {fileID: 2381913009605018019}
   skillAttribute: {fileID: 8716835712639885646}
   skillAttrAmount: {fileID: 1021021258061794824}
-  parentSkill: []
+  parentSkill:
+  - {fileID: 11400000, guid: 590f428e64211a941a8ae39a0776dfb8, type: 2}
   PlayerHandler: {fileID: 0}
 --- !u!1 &6694735606445246766
 GameObject:
@@ -6102,7 +6108,7 @@ RectTransform:
   m_GameObject: {fileID: 6933811050415582779}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 6886314761207423679}
   m_RootOrder: 0
@@ -6133,7 +6139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6327,7 +6333,7 @@ RectTransform:
   m_GameObject: {fileID: 7328685300660052161}
   m_LocalRotation: {x: -0, y: 0, z: -0.9396927, w: -0.34202012}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4038682288223032720}
   m_RootOrder: 0
@@ -6358,7 +6364,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7083,7 +7089,7 @@ RectTransform:
   m_GameObject: {fileID: 8321797576204902117}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 3357401967204123813}
   m_RootOrder: 0
@@ -7114,7 +7120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7283,7 +7289,8 @@ MonoBehaviour:
   skillMonsterPointNeeded: {fileID: 5982807387280170892}
   skillAttribute: {fileID: 246905386656165325}
   skillAttrAmount: {fileID: 4339001202390338187}
-  parentSkill: []
+  parentSkill:
+  - {fileID: 11400000, guid: b7e3d850dccd95643bed146ace495296, type: 2}
   PlayerHandler: {fileID: 0}
 --- !u!1 &8523621692435067990
 GameObject:
@@ -7439,7 +7446,8 @@ MonoBehaviour:
   skillMonsterPointNeeded: {fileID: 4962244520723737286}
   skillAttribute: {fileID: 4127923615761174998}
   skillAttrAmount: {fileID: 8295560810505529099}
-  parentSkill: []
+  parentSkill:
+  - {fileID: 11400000, guid: 933264bd398ee1744a7d67ffa38f2ac5, type: 2}
   PlayerHandler: {fileID: 0}
 --- !u!1 &8607963172186207156
 GameObject:
@@ -7541,7 +7549,7 @@ RectTransform:
   m_GameObject: {fileID: 8612681313827255061}
   m_LocalRotation: {x: 0, y: -0, z: 0.9396927, w: -0.3420201}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 2566860438724743834}
   m_RootOrder: 0
@@ -7572,7 +7580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_Color: {r: 1, g: 0.995283, b: 0.995283, a: 0.39215687}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7891,7 +7899,8 @@ MonoBehaviour:
   skillMonsterPointNeeded: {fileID: 5846279828558738325}
   skillAttribute: {fileID: 7476122157396020765}
   skillAttrAmount: {fileID: 6948279823342053525}
-  parentSkill: []
+  parentSkill:
+  - {fileID: 11400000, guid: c09839814087e534caaad78cc745a013, type: 2}
   PlayerHandler: {fileID: 0}
 --- !u!1 &8847081394084658938
 GameObject:

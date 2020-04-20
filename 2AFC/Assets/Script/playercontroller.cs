@@ -94,6 +94,18 @@ public class playercontroller : MonoBehaviour
             BasicRotation();
         }
 
+        if (Input.GetKey(KeyCode.M))
+        {
+            if (Cursor.visible == false)
+            {
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.visible = false;
+            }
+            
+        }
         
         _isGrounded = Physics.CheckSphere(_groundChecker.position, GroundDistance, Ground, QueryTriggerInteraction.Ignore);
         if (_isGrounded && _velocity.y < 0)

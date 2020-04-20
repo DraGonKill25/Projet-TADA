@@ -2031,6 +2031,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1570858074831071804}
     m_Modifications:
+    - target: {fileID: 1873410950985392758, guid: 956bfbe55a7752548bd8bd00d9e2a49c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: -589839734470915192}
+    - target: {fileID: 1873410950985392758, guid: 956bfbe55a7752548bd8bd00d9e2a49c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdatePoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873410950985392758, guid: 956bfbe55a7752548bd8bd00d9e2a49c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873410950985392758, guid: 956bfbe55a7752548bd8bd00d9e2a49c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873410950985392758, guid: 956bfbe55a7752548bd8bd00d9e2a49c,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1937151262894839012, guid: 956bfbe55a7752548bd8bd00d9e2a49c,
         type: 3}
       propertyPath: PlayerHandler
@@ -2239,6 +2264,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1570858074831071804}
     m_Modifications:
+    - target: {fileID: 62507833614617804, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 5849504085249583887}
     - target: {fileID: 326862353752235980, guid: 84da237701c95ce49941ed71b666bbe4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2344,16 +2374,51 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1352474381276427910, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 310
+      objectReference: {fileID: 0}
+    - target: {fileID: 1352474381276427910, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -168
+      objectReference: {fileID: 0}
     - target: {fileID: 2265376113307656020, guid: 84da237701c95ce49941ed71b666bbe4,
         type: 3}
       propertyPath: PlayerHandler
       value: 
       objectReference: {fileID: 5849504085249583887}
+    - target: {fileID: 2729823574359967128, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 311
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729823574359967128, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -440
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688061247491994515, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4688061247491994515, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1544794156049741411}
     - target: {fileID: 5588177915647580765, guid: 84da237701c95ce49941ed71b666bbe4,
         type: 3}
       propertyPath: PlayerHandler
       value: 
       objectReference: {fileID: 5849504085249583887}
+    - target: {fileID: 5837521697845873512, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 317
+      objectReference: {fileID: 0}
     - target: {fileID: 6499611296982571008, guid: 84da237701c95ce49941ed71b666bbe4,
         type: 3}
       propertyPath: m_Name

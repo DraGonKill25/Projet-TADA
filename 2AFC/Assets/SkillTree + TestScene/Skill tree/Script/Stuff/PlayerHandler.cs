@@ -12,6 +12,13 @@ namespace Script
         [SerializeField] private Canvas canvas;
         private bool displayCanvas;
 
+
+        void Start()
+        {
+            canvas.gameObject.SetActive(false);
+        }
+
+
         // Update is called once per frame
         void Update()
         {
