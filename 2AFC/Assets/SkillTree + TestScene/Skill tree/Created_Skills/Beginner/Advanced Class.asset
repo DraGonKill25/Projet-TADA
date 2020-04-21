@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Advanced Class
   m_EditorClassIdentifier: 
   Description: Power up
-  Icon: {fileID: 21300000, guid: 21c4a8515a327db4a89489131daee51d, type: 3}
+  Icon: {fileID: 21300000, guid: 24abf262443d5d541a8ab6853a17e0cc, type: 3}
   MonsterPointNeeded: 1000
   AffectedPlayerAttributes:
   - attributes: {fileID: 11400000, guid: e6ee9a60b3f7bc047bd3f9dd30c13d26, type: 2}
