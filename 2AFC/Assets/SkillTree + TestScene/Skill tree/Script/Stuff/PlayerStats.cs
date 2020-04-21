@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Photon.Pun;
 using UnityEngine;
 
 namespace Script
@@ -37,6 +38,11 @@ namespace Script
         public void UpdatePoint(int amount)
         {
             monsterPoint += amount;
+        }
+
+        void Start()
+        {
+            PlayerName = GetComponent<PhotonView>().Owner.NickName;
         }
     }
 }
