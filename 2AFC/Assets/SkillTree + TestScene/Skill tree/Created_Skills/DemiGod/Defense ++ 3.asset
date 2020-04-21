@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Defense ++ 3
   m_EditorClassIdentifier: 
   Description: augmente defense
-  Icon: {fileID: 21300000, guid: 0010e352a9b1abc4ebab3f3235c95e0b, type: 3}
+  Icon: {fileID: 21300000, guid: dc90b2c236cbacf47b20a1294efdf59d, type: 3}
   MonsterPointNeeded: 100
   AffectedPlayerAttributes:
   - attributes: {fileID: 11400000, guid: e6ee9a60b3f7bc047bd3f9dd30c13d26, type: 2}
