@@ -19,7 +19,7 @@ public class Pause : MonoBehaviour
 
         transform.GetChild(0).gameObject.SetActive(paused);
         Cursor.lockState = (paused) ? CursorLockMode.None : CursorLockMode.Confined;
-        Cursor.visible = paused;
+        Cursor.visible = false;
     }
 
     public void Quit()

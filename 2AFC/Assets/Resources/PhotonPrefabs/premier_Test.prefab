@@ -501,9 +501,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playercamera: {fileID: 3278754152972401416}
   camera: {fileID: 7023091030457716439}
-  movementSpeed: 20
-  rotationSpeed: 50
-  GroundDistance: 1
+  movementSpeed: 40
+  rotationSpeed: 40
+  GroundDistance: 0
   JumpHeight: 5
   Gravity: -10
   Ground:
@@ -2374,6 +2374,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1028077222919739668, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.100006
+      objectReference: {fileID: 0}
     - target: {fileID: 1352474381276427910, guid: 84da237701c95ce49941ed71b666bbe4,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2429,11 +2434,26 @@ PrefabInstance:
       propertyPath: PlayerHandler
       value: 
       objectReference: {fileID: 5849504085249583887}
+    - target: {fileID: 7412743277843156564, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7424535329375953963, guid: 84da237701c95ce49941ed71b666bbe4,
         type: 3}
       propertyPath: PlayerHandler
       value: 
       objectReference: {fileID: 5849504085249583887}
+    - target: {fileID: 8447258064086087115, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8447258064086087115, guid: 84da237701c95ce49941ed71b666bbe4,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 4339627845184013751}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84da237701c95ce49941ed71b666bbe4, type: 3}
 --- !u!224 &4848632243722652895 stripped
