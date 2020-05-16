@@ -5,12 +5,9 @@ using UnityEngine;
 
 public class playercontroller : MonoBehaviour
 {
-
     private PhotonView PV;
     private CharacterController Player;
     private Animator MyPlayerAnimator;
-    public GameObject playercamera;
-    public Transform camera;
 
     public float movementSpeed /*=2f*/;
     public float rotationSpeed /*=30f*/;
@@ -53,6 +50,7 @@ public class playercontroller : MonoBehaviour
         PV = GetComponent<PhotonView>();
         Player = GetComponent<CharacterController>();
         MyPlayerAnimator = GetComponent<Animator>();
+        GameObject playercamera = GameObject.FindGameObjectWithTag("MainCamera");
 
         GameObject.Find("Pause").transform.GetChild(0).gameObject.SetActive(false);
 
@@ -63,11 +61,7 @@ public class playercontroller : MonoBehaviour
         else
         {
             if (PV.IsMine)
-            {
                 playercamera.SetActive(true);
-            }
-            else
-                playercamera.SetActive(false);
         }
 
         _groundChecker = transform.GetChild(0);
@@ -89,7 +83,7 @@ public class playercontroller : MonoBehaviour
         }
 
         if (PV.IsMine && !Pause.paused)
-        {
+        { 
             BasicMovement();
             BasicRotation();
         }
@@ -107,7 +101,7 @@ public class playercontroller : MonoBehaviour
             
         }
         
-        _isGrounded = Physics.CheckSphere(_groundChecker.position, GroundDistance, Ground, QueryTriggerInteraction.Ignore);
+        //_isGrounded = Physics.CheckSphere(_groundChecker.position, GroundDistance, Ground, QueryTriggerInteraction.Ignore);
         if (_isGrounded && _velocity.y < 0)
             _velocity.y = 0f;
             
@@ -179,6 +173,9 @@ public class playercontroller : MonoBehaviour
 
     void BasicRotation()
     {
+        GameObject playercamera = GameObject.FindGameObjectWithTag("MainCamera");
+        Transform camera = playercamera.transform;
+
         float mouseX = Input.GetAxis("Mouse X") * Time.deltaTime * rotationSpeed;
         transform.Rotate(new Vector3(0, mouseX, 0));
 

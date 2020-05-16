@@ -42,7 +42,7 @@ namespace Script
 
         void Start()
         {
-            PlayerName = GetComponent<PhotonView>().Owner.NickName;
+            //PlayerName = GetComponent<PhotonView>().Owner.NickName;
         }
     }
 }
