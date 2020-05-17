@@ -141,6 +141,7 @@ public class playercontroller : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             vv = Vector3.back;
+            delta = delta * 15;
         }
 
         float h = Input.GetAxis("Mouse X");
@@ -153,7 +154,7 @@ public class playercontroller : MonoBehaviour
             RotatePerso(-1);
         }
         transform.Translate(delta * vv);
-
+        
         MyPlayerAnimator.SetFloat("Speed", (delta * vv).magnitude);
 
         if (Input.GetKey(KeyCode.A))
