@@ -141,7 +141,7 @@ public class playercontroller : MonoBehaviour
         if (Input.GetKey(KeyCode.S))
         {
             vv = Vector3.back;
-            delta = delta * 15;
+            delta = delta * 200;
         }
 
         float h = Input.GetAxis("Mouse X");
