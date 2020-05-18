@@ -1083,12 +1083,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 3186167110301017735}
   camPosX: 0
-  camPosY: 6
-  camPosZ: -8
-  camRotationX: 10
+  camPosY: 0
+  camPosZ: 0
+  camRotationX: 0
   camRotationY: 0
   camRotationZ: 0
-  turnSpeed: 0.59
+  turnSpeed: 0
 --- !u!114 &5144727432451091503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1101,9 +1101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5681b8296568c24fb4c4fe5488a7ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minDistance: 12
-  maxDistance: 18
-  smooth: 60
+  minDistance: 15
+  maxDistance: 20
+  smooth: 10
   dollyDirAdjusted: {x: 0, y: 0, z: 0}
   distance: 0
 --- !u!1 &3644230308452894396
@@ -1478,12 +1478,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac1eb416fac15641b1be61cbd48a458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CameraMoveSpeed: 50
+  CameraMoveSpeed: 60
   CameraFollowObj: {fileID: 5298735606009946515}
   clampAngle: 50
-  inputSensitivity: 20
+  inputSensitivity: 60
   CameraObj: {fileID: 3278754152972401416}
-  PlayerObj: {fileID: 1544794156049741411}
+  PlayerObj: {fileID: 1959067609162928369}
   camDistanceXToPlayer: 0
   camDistanceYToPlayer: 0
   camDistanceZToPlayer: 0
@@ -1948,7 +1948,7 @@ GameObject:
   - component: {fileID: 1614617262656791859}
   - component: {fileID: 5596420728844739625}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: BodyCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2054,7 +2054,7 @@ GameObject:
   - component: {fileID: 945124270337808508}
   m_Layer: 0
   m_Name: HeadCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2084,8 +2084,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.8, z: 1}
-  m_Center: {x: 0, y: -1.5, z: 0}
+  m_Size: {x: 1, y: 0.97, z: 1}
+  m_Center: {x: 0, y: -1.4, z: 0}
 --- !u!1 &8690817867025238966
 GameObject:
   m_ObjectHideFlags: 0
