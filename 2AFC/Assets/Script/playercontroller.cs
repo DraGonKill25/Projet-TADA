@@ -116,7 +116,7 @@ public class playercontroller : MonoBehaviour
             }
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.F) && !foo.IsName("Armature_Block "))
         {
             Player.Move(-transform.forward * Time.deltaTime * movementSpeed);
             MyPlayerAnimator.SetInteger("Speed", 3);
