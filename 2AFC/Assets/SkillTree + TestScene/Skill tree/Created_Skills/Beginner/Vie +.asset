@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Vie +
   m_EditorClassIdentifier: 
   Description: augmente vie
-  Icon: {fileID: 21300000, guid: 51e90e2f352d93d49b72bebce22d5c10, type: 3}
+  Icon: {fileID: 21300000, guid: c6b3714b15e431a4993f5016e12e6209, type: 3}
   MonsterPointNeeded: 100
   AffectedPlayerAttributes:
   - attributes: {fileID: 11400000, guid: 2876590e97c01d646aa7ad1d415efcda, type: 2}
