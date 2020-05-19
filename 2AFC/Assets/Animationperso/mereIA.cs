@@ -6,6 +6,7 @@ public class mereIA : MonoBehaviour
 {
     public const float DistanceDectec = 10f;
     public const float DistanceContact = 2f;
+    float speed = 0.5f;
 
     public GameObject MyPlayerObject;
 
@@ -14,11 +15,9 @@ public class mereIA : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        AnimBossMere = (Animator)GetComponent<Animator>();
-        if(AnimBossMere == null)
-        {
-            Debug.LogError("Erreur pour trouver l'animation");
-        }
+        AnimBossMere = GetComponent<Animator>();
+        AnimBossMere.SetFloat("Speed", 0);
+        AnimBossMere.SetInteger("Attack", 0);
     }
 
     // Update is called once per frame
@@ -28,40 +27,39 @@ public class mereIA : MonoBehaviour
         Transform Target = MyPlayerObject.transform;
 
         distance = Vector3.Distance(Target.position, transform.position);
-
-        if(distance < DistanceContact)
+        
+        if(distance <= DistanceDectec)
         {
-            Debug.Log("Cible au contact (" + distance + ")");
-            StopMouvement(AnimBossMere);
-        }
-        else
-        {
-            if (distance < DistanceDectec)
+            if (distance > DistanceContact)
             {
-                Debug.Log("Cible detectee (" + distance + ")");
-                //se tourner vers la cible
                 TurnTowardTarget(transform, Target);
-
-                //se deplacer vers la cible
-                MoveTowardTarget(AnimBossMere);
+                MoveTowardTarget(transform, Target);
             }
             else
             {
-                Debug.Log("Cible perdu (" + distance + ")");
-                StopMouvement(AnimBossMere);
-                
+                StopMovement();
+                TurnTowardTarget(transform, Target);
+                StartAttacking();
             }
+        }
+        else
+        {
+            StopMovement();
         }
     }
 
-    private void StopMouvement(Animator anim)
+    private void MoveTowardTarget(Transform source, Transform target)
     {
-        anim.SetInteger("Marche", 0);
+        //anim.SetInteger("Speed", 0);
+        float theSpeed = speed * Time.deltaTime;
+        source.position = Vector3.MoveTowards(source.position, target.position, theSpeed);
+        AnimBossMere.SetFloat("Speed", theSpeed);
+        AnimBossMere.SetInteger("Attack", 0);
     }
 
-    private void MoveTowardTarget(Animator anim)
+    private void StopMovement()
     {
-        anim.SetInteger("Marche", 1);
+        AnimBossMere.SetInteger("Speed", 0);
     }
 
     private void TurnTowardTarget(Transform source, Transform target)
@@ -77,5 +75,26 @@ public class mereIA : MonoBehaviour
         quat = Quaternion.Euler(vv);
 
         source.rotation = quat;
+    }
+
+    private void StartAttacking()
+    {
+        int attack = (int)Random.Range(1f, 6f);
+
+        if(attack >= 5)
+        {
+            AnimBossMere.SetInteger("Attack", 1);
+        }
+        else
+        {
+            if(attack >= 4)
+            {
+                AnimBossMere.SetInteger("Attack", 2);
+            }
+            else
+            {
+                AnimBossMere.SetInteger("Attack", 0);
+            }
+        }
     }
 }

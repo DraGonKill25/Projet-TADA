@@ -10,7 +10,7 @@ public class PlayerVie : MonoBehaviour
     void Start()
     {
         myText = GetComponent<TextMesh>();
-        MyPlayerVie = 99;
+        MyPlayerVie = 100;
     }
 
     void Update()
