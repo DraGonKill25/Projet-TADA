@@ -26,10 +26,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scene/SceneMulti/TestGame.unity
     guid: 1ecda6e0234c206458e94dedf4e10905
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scene/Room2.unity
     guid: 3eb9d2f0e304d9e4aa9263358067253e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/New Map.unity
     guid: 41d4ea7a0033c6f4aad55547dd92994a
   m_configObjects: {}
