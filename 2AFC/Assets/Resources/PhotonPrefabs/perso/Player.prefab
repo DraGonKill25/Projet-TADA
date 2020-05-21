@@ -3370,6 +3370,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerName: Player
   MonsterPoint: 0
+  classe: {fileID: 0}
+  item: {fileID: 0}
+  ChangedClass: 0
   Attributes:
   - attributes: {fileID: 11400000, guid: 2876590e97c01d646aa7ad1d415efcda, type: 2}
     amount: 100

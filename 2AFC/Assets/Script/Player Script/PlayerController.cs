@@ -60,6 +60,7 @@ public class PlayerController : MonoBehaviour
         if (PV.IsMine && !Pause.paused)
         {
             MyPlayerAnimator.SetInteger("Speed", 0);
+            MyPlayerAnimator.SetInteger("Attack", 0);
             BasicMovement();
             //BasicRotation();
         }
@@ -138,6 +139,7 @@ public class PlayerController : MonoBehaviour
                 nextcast1 = Time.time + CooldownTime1;
             }
         }
+        
 
         if (Time.time > nextcast2)
         {

@@ -15,7 +15,7 @@ public class insideTriger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "boxbody")
         {
             conversation = true;
             TxtQuestion.gameObject.SetActive(true);
@@ -24,7 +24,7 @@ public class insideTriger : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "boxbody")
         {
             conversation = false;
             TxtQuestion.gameObject.SetActive(false);
