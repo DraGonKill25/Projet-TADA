@@ -14,6 +14,12 @@ namespace Script
         [SerializeField]
         private int MonsterPoint = 0;
 
+
+        //variavle pour chamger de classe
+        public Class.Class classe;
+        public Items.Items item;
+        public bool ChangedClass = false;
+
         public int monsterPoint
         {
             get { return MonsterPoint; }
