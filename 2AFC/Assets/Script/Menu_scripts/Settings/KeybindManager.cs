@@ -21,8 +21,6 @@ public class KeybindManager : MonoBehaviour
 
     public Dictionary<string, KeyCode> Keybinds { get; private set; }
 
-    public Dictionary<string, KeyCode> ActionBinds { get; private set; }
-
     private string bindName;
 
     // Start is called before the first frame update
@@ -30,41 +28,41 @@ public class KeybindManager : MonoBehaviour
     {
         Keybinds = new Dictionary<string, KeyCode>();
 
-        ActionBinds = new Dictionary<string, KeyCode>();
-
         BindKey("Forward", KeyCode.Z);
         BindKey("Back", KeyCode.S);
         BindKey("Left", KeyCode.Q);
         BindKey("Right", KeyCode.D);
         BindKey("Jump", KeyCode.Space);
-
-        //BindKey("Action_E", KeyCode.E);
+        BindKey("Pause", KeyCode.Escape);
+        BindKey("SkillTree", KeyCode.Tab);
+        BindKey("Cursor", KeyCode.M);
+        BindKey("Run", KeyCode.LeftShift);
+        BindKey("Action_1", KeyCode.A);
+        BindKey("Action_2", KeyCode.E);
+        BindKey("Action_3", KeyCode.R);
+        BindKey("Action_4", KeyCode.F);
     }
 
     public void BindKey(string key, KeyCode keyBind)
     {
         Dictionary<string, KeyCode> currentDictionary = Keybinds;
 
-        if(key.Contains("Action_")) //if it's an actionkey
-        {
-            currentDictionary = ActionBinds;
-        }
-
         if(!currentDictionary.ContainsKey(key))
         {
             currentDictionary.Add(key, keyBind);
-            ManagerKeybinds.MyInstance.UpdateKeyText(key, keyBind);
+            ManagerKeybinds.MyInstance.UpdateKeyText(key);
         }
         else if(currentDictionary.ContainsValue(keyBind))
         {
             string myKey = currentDictionary.FirstOrDefault(x => x.Value == keyBind).Key;
 
             currentDictionary[myKey] = KeyCode.None;
-            ManagerKeybinds.MyInstance.UpdateKeyText(key, KeyCode.None);
+            ManagerKeybinds.MyInstance.UpdateKeyText(key);
         }
 
         currentDictionary[key] = keyBind;
-        ManagerKeybinds.MyInstance.UpdateKeyText(key, keyBind);
+        SaveKeys();
+        ManagerKeybinds.MyInstance.UpdateKeyText(key);
         bindName = string.Empty;
     }
 
@@ -83,5 +81,15 @@ public class KeybindManager : MonoBehaviour
                 BindKey(bindName, e.keyCode);
             }
         }
+    }
+
+    public void SaveKeys()
+    {
+        foreach(var key in Keybinds)
+        {
+            PlayerPrefs.SetString(key.Key, key.Value.ToString());
+        }
+
+        PlayerPrefs.Save();
     }
 }

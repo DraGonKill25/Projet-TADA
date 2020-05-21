@@ -28,14 +28,9 @@ public class ManagerKeybinds : MonoBehaviour
         keybindButtons = GameObject.FindGameObjectsWithTag("Keybind");
     }
 
-    public void UpdateKeyText(string key, KeyCode code)
+    public void UpdateKeyText(string key)
     {
         TextMeshProUGUI tmp = Array.Find(keybindButtons, x => x.name == key).GetComponentInChildren<TextMeshProUGUI>();
-        tmp.text = code.ToString();
-    }
-
-    public void ClickActionButton(string buttonName)
-    {
-
+        tmp.text = PlayerPrefs.GetString(key);
     }
 }
