@@ -6,6 +6,9 @@ TagManager:
   tags:
   - boxbody
   - Keybind
+  - SubPlayer
+  - KeybindManager
+  - ManagerKeybinds
   layers:
   - Default
   - TransparentFX

@@ -12,17 +12,10 @@ namespace Script
         [SerializeField] private Canvas canvas;
         private bool displayCanvas;
 
-
-        void Start()
-        {
-            canvas.gameObject.SetActive(false);
-        }
-
-
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown("tab"))
+            if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("SkillTree"))))
             {
                 if (canvas)
                 {

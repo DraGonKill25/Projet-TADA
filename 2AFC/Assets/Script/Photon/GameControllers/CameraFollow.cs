@@ -36,18 +36,21 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        mouseX = Input.GetAxis("Mouse X");
-        mouseY = Input.GetAxis("Mouse Y");
-        finalInputX = mouseX;
-        finalInputZ = mouseY;
+        if (!Pause.paused)
+        {
+            mouseX = Input.GetAxis("Mouse X");
+            mouseY = Input.GetAxis("Mouse Y");
+            finalInputX = mouseX;
+            finalInputZ = mouseY;
 
-        rotY += finalInputX * inputSensitivity * Time.deltaTime;
-        rotX -= finalInputZ * inputSensitivity * Time.deltaTime;
+            rotY += finalInputX * inputSensitivity * Time.deltaTime;
+            rotX -= finalInputZ * inputSensitivity * Time.deltaTime;
 
-        rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
+            rotX = Mathf.Clamp(rotX, -clampAngle, clampAngle);
 
-        Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
-        transform.rotation = localRotation;
+            Quaternion localRotation = Quaternion.Euler(rotX, rotY, 0.0f);
+            transform.rotation = localRotation;
+        }
     }
 
     void LateUpdate()
