@@ -41,6 +41,8 @@ public class KeybindManager : MonoBehaviour
         BindKey("Action_2", KeyCode.E);
         BindKey("Action_3", KeyCode.R);
         BindKey("Action_4", KeyCode.F);
+        BindKey("Accept", KeyCode.O);
+        BindKey("Refuse", KeyCode.N);
     }
 
     public void BindKey(string key, KeyCode keyBind)
