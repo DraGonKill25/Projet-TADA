@@ -35,20 +35,20 @@ public class Choixdeclasse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
+        if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Accept"))))
         {
             TxtQuestion.gameObject.SetActive(false);
             TxtOui.gameObject.SetActive(true);
+            //changer de classe
             
         }
 
-        if (Input.GetKeyDown(KeyCode.N))
+        if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Refuse"))))
         {
             TxtQuestion.gameObject.SetActive(false);
             TxtNon.gameObject.SetActive(true);
             new WaitForSeconds(2f);
             TxtNon.gameObject.SetActive(false);
-
         }
     }
 }

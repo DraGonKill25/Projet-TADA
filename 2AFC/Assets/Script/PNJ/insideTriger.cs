@@ -44,7 +44,7 @@ public class insideTriger : MonoBehaviour
             //recupere la classe du perso dans le trigger
             if(conversation /*classe a mettre normalement*/)
             {
-                if (Input.GetKeyDown(KeyCode.O))
+                if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Accept"))))
                 {
                     //CHANGER DE CLASSE
 
@@ -53,7 +53,7 @@ public class insideTriger : MonoBehaviour
                     TxtReponse.gameObject.SetActive(true);
                 }
 
-                if (Input.GetKeyDown(KeyCode.N))
+                if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Refuse"))))
                 {
                     //Affiche Canvas "Revient plus tard"
                     TxtQuestion.gameObject.SetActive(false);
