@@ -40,6 +40,7 @@ public class Premierequete : MonoBehaviour
             TxtQuestion.gameObject.SetActive(false);
             TxtOui.gameObject.SetActive(true);
             InvisibleWall.SetActive(false);
+            LePNJ.gameObject.SetActive(false);
         }
 
         if (Input.GetKeyDown(KeyCode.N))
@@ -51,7 +52,7 @@ public class Premierequete : MonoBehaviour
             {
                 new WaitForSeconds(1f);
                 TxtNon.gameObject.SetActive(false);
-                LePNJ.SetActive(false);
+                LePNJ.gameObject.SetActive(false);
             }
 
             if (Input.GetKeyDown(KeyCode.Z))
@@ -61,7 +62,7 @@ public class Premierequete : MonoBehaviour
                 NoKill.gameObject.SetActive(true);
                 new WaitForSeconds(2f);
                 NoKill.gameObject.SetActive(false);
-                LePNJ.SetActive(false);
+                LePNJ.gameObject.SetActive(false);
             }
 
         }
