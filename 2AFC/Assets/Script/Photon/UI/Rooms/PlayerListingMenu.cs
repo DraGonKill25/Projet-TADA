@@ -16,6 +16,9 @@ public class PlayerListingMenu : MonoBehaviourPunCallbacks
     [SerializeField]
     private TextMeshProUGUI _readyText;
 
+    [SerializeField]
+    private Animator anim;
+
     private List<PlayerListing> _listings = new List<PlayerListing>();
     private RoomsCanvases _roomsCanvases;
     private bool _ready = false;
@@ -121,6 +124,7 @@ public class PlayerListingMenu : MonoBehaviourPunCallbacks
                 }
             }
 
+            anim.SetTrigger("Start");
             Destroy(GameObject.FindGameObjectWithTag("Music"));
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;

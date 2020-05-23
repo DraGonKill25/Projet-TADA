@@ -10,6 +10,11 @@ public class PlayerController : MonoBehaviour
     private Animator MyPlayerAnimator;
 
     [SerializeField]
+    private Rigidbody rigidbody;
+    [SerializeField]
+    private AudioSource audiosrc;
+
+    [SerializeField]
     private float movementSpeed /*=2f*/;
     [SerializeField]
     private float rotationSpeed /*=30f*/;
@@ -33,6 +38,8 @@ public class PlayerController : MonoBehaviour
     private float nextcast2 = 0;
     private float nextcast3 = 0;
     private float nextcastblock = 0;
+
+    private bool isMoving;
 
     public string Classe = "Apprentice";
 
@@ -77,6 +84,16 @@ public class PlayerController : MonoBehaviour
                 Cursor.visible = false;
 
         }
+
+        if (rigidbody.velocity.x != 0)
+            isMoving = true;
+        else
+            isMoving = false;
+
+        if (isMoving && !audiosrc.isPlaying)
+            audiosrc.Play();
+        else
+            audiosrc.Stop();
 
         _isGrounded = Physics.CheckSphere(_groundChecker.position, GroundDistance, Ground, QueryTriggerInteraction.Ignore);
         if (_isGrounded && _velocity.y < 0)
