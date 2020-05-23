@@ -9,6 +9,7 @@ TagManager:
   - SubPlayer
   - KeybindManager
   - ManagerKeybinds
+  - Music
   layers:
   - Default
   - TransparentFX
