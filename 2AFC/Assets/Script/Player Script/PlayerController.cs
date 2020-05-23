@@ -9,14 +9,18 @@ public class PlayerController : MonoBehaviour
     private CharacterController Player;
     private Animator MyPlayerAnimator;
 
+    [SerializeField]
     private float movementSpeed /*=2f*/;
+    [SerializeField]
     private float rotationSpeed /*=30f*/;
 
     private bool _isGrounded = true;
     private Transform _groundChecker;
     private float GroundDistance = 1f;
+    [SerializeField]
     private float JumpHeight;
     private Vector3 _velocity;
+    [SerializeField]
     private float Gravity;
     private LayerMask Ground;
 
