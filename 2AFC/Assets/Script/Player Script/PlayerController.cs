@@ -217,6 +217,7 @@ public class PlayerController : MonoBehaviour
         {
             if (SubPlayers[i].activeSelf)
             {
+                Debug.Log("Found Animator");
                 MyCurrentAnimator = SubPlayers[i].GetComponent<Animator>();
             }
 

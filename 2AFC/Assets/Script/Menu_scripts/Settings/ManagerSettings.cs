@@ -10,6 +10,8 @@ public class ManagerSettings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        KeybindManager.MyInstance.SaveKeys();
+
         audioMixer.SetFloat("mastervolume", PlayerPrefs.GetFloat("mastervolume"));
         audioMixer.SetFloat("musicvolume", PlayerPrefs.GetFloat("musicvolume"));
         audioMixer.SetFloat("Environmentvolume", PlayerPrefs.GetFloat("Environmentvolume"));

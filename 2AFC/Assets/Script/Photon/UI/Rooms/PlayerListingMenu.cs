@@ -121,6 +121,7 @@ public class PlayerListingMenu : MonoBehaviourPunCallbacks
                 }
             }
 
+            Destroy(GameObject.FindGameObjectWithTag("Music"));
             PhotonNetwork.CurrentRoom.IsOpen = false;
             PhotonNetwork.CurrentRoom.IsVisible = false;
             PhotonNetwork.LoadLevel(2); //build index scene (in build settings)
