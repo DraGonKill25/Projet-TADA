@@ -9,24 +9,26 @@ namespace Script
     {
         public PlayerStats Player;
 
-        [SerializeField] private Canvas canvas;
+        [SerializeField] private GameObject canvas;
         private bool displayCanvas;
+
+
+        void Start()
+        {
+            canvas.gameObject.SetActive(false);
+        }
+
 
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("SkillTree"))))
+            if (Input.GetKeyDown("tab"))
             {
                 if (canvas)
                 {
-                    if (Cursor.visible == false)
-                    {
-                        Cursor.visible = true;
-                    }
                     displayCanvas = !displayCanvas;
                     canvas.gameObject.SetActive(displayCanvas);
                 }
-                Cursor.visible = false;
             }
         }
     }

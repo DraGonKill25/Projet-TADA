@@ -13,9 +13,8 @@ namespace ScriptInventaire
         public Text Name;
 
         public Text MonsterPoint;
-
-        //Not created for the moment
-        //public Classe classe;
+        
+        public Text classe;
         [SerializeField] private PlayerStats Player;
 
 
@@ -37,6 +36,8 @@ namespace ScriptInventaire
                 Name.text = Player.PlayerName;
 
                 MonsterPoint.text = Player.monsterPoint.ToString();
+
+                classe.text = Player.classe.EvolutionMade[Player.classe.EvolutionMade.Count-1];
             }
         }
     }

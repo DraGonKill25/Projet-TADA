@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,5 +10,10 @@ namespace Class
     {
         public List<string> EvolutionMade;
         public string Name;
+
+        private void OnEnable()
+        {
+            EvolutionMade = new List<string>{Name};
+        }
     }
 }

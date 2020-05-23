@@ -12,10 +12,7 @@ namespace Script
         [Header("Player stats")]
         public string PlayerName;
         [SerializeField]
-        private int MonsterPoint = 0;
-
-
-        //variavle pour chamger de classe
+        private int MonsterPoint ;
         public Class.Class classe;
         public Items.Items item;
         public bool ChangedClass = false;
@@ -48,15 +45,22 @@ namespace Script
 
         void Start()
         {
-            //PlayerName = GetComponent<PhotonView>().Owner.NickName;
+            PlayerName = GetComponent<PhotonView>().Owner.NickName;
+            
+            
         }
-
         void Update()
         {
 
             if(Skills[Skills.Count-1] == skill)
             {
                 ChangedClass = true;
+            }
+
+            if (Skills[Skills.Count - 1].Description == "Change")
+            {
+                classe.EvolutionMade.Add(Skills[Skills.Count-1].name);
+                
             }
 
         }

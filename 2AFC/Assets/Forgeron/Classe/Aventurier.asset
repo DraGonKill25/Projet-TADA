@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 354937c82a1374841a3e15f1b514e05e, type: 3}
   m_Name: Aventurier
   m_EditorClassIdentifier: 
-  EvolutionMade: []
+  EvolutionMade:
+  - Aventurier
   Name: Aventurier

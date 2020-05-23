@@ -29,9 +29,9 @@ namespace Script
             if (skill)
                 skill.SetValues(this.gameObject, PlayerHandler);
 
+            this.transform.Find("Image").Find("Available").gameObject.SetActive(false);
             EnableSkills();
             skill.SkillIsUnlocked = false;
-            this.transform.Find("Image").Find("Available").gameObject.SetActive(false);
         }
 
         public void EnableSkills()
@@ -42,7 +42,7 @@ namespace Script
                 EachSkill = EachSkill && _skill.SkillIsUnlocked;
                 _skill.skillUpdateChange += ReactToChange;
             }
-
+            
             if (PlayerHandler && skill && skill.EnableSkill(PlayerHandler) /*&& skill.skillIsUnlocked*/)
             {
                 TurnOnSkillIcon();

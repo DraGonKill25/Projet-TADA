@@ -34,6 +34,11 @@ public class ClassMage : MonoBehaviour
                     other.gameObject.transform.GetChild(2).gameObject.SetActive(false);
                     other.gameObject.transform.GetChild(3).gameObject.SetActive(false);
                     other.gameObject.transform.GetChild(4).gameObject.SetActive(true);
+                    other.gameObject.transform.GetChild(5).transform.GetChild(4).transform.GetChild(0).gameObject.SetActive(false);
+                    other.gameObject.transform.GetChild(5).transform.GetChild(4).transform.GetChild(1).gameObject.SetActive(false);
+                    other.gameObject.transform.GetChild(5).transform.GetChild(4).transform.GetChild(2).gameObject.SetActive(false);
+                    other.gameObject.transform.GetChild(5).transform.GetChild(4).transform.GetChild(3).gameObject.SetActive(true);
+                    other.gameObject.transform.GetChild(5).transform.GetChild(4).transform.GetChild(4).gameObject.SetActive(false);
                 }
             }
             else
