@@ -6,14 +6,14 @@ public class HandCollider : MonoBehaviour
 {
     public GameObject Zombie;
     Animator anim;
-    PlayerVie MyPlayerVie;
+    ViePerso MyPlayerVie;
     
     
     // Start is called before the first frame update
     void Start()
     {
         anim = (Animator)Zombie.GetComponent<Animator>();
-        MyPlayerVie = (PlayerVie)FindObjectOfType(typeof(PlayerVie));
+        MyPlayerVie = (ViePerso)FindObjectOfType(typeof(ViePerso));
     }
     
     
@@ -27,7 +27,7 @@ public class HandCollider : MonoBehaviour
             if (info.IsName("Z_Attack"))
             {
                 Debug.Log("est en train d'attaquer");
-                MyPlayerVie.LooseHealth(5);
+                MyPlayerVie.LooseHealth(3);
             }
         }
     }

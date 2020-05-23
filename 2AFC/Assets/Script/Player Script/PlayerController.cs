@@ -42,7 +42,7 @@ public class PlayerController : MonoBehaviour
     private bool isMoving;
 
     public string Classe = "Apprentice";
-
+    [HideInInspector]
     public ViePerso perso;
 
 
@@ -116,14 +116,17 @@ public class PlayerController : MonoBehaviour
             MyPlayerAnimator.SetInteger("Attack", 5);
         }
 
-        if (perso.IsMyPlayerDead())
+        Debug.Log(perso.ReturnPV());
+        if (perso.ReturnPV() <= 0)
         {
             MyPlayerAnimator.SetInteger("Attack", 6);
         }
         AnimatorStateInfo info = MyPlayerAnimator.GetCurrentAnimatorStateInfo(1);
         if (info.IsName("Dead"))
         {
-            DestroyObject(gameObject);
+            //DestroyObject(gameObject);
+            transform.position = new Vector3(91.7f, -5.55f);
+            perso.ResetHP();
         }
     }
 
@@ -244,7 +247,7 @@ public class PlayerController : MonoBehaviour
         Animator MyCurrentAnimator = null;
         int i = 0;
         int length = SubPlayers.Length;
-        while (i < length && MyCurrentAnimator == null)
+        while (i < length || MyCurrentAnimator == null)
         {
             if (SubPlayers[i].activeSelf)
             {
