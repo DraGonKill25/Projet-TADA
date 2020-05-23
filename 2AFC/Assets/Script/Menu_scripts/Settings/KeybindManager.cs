@@ -87,6 +87,10 @@ public class KeybindManager : MonoBehaviour
 
     public void SaveKeys()
     {
+        if (Keybinds.Count == 0)
+        {
+            Start();
+        }
         foreach(var key in Keybinds)
         {
             PlayerPrefs.SetString(key.Key, key.Value.ToString());
