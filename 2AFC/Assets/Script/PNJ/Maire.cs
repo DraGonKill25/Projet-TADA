@@ -36,22 +36,27 @@ public class Maire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Accept"))))
+        if (conversation)
         {
-            TxtQuestion.gameObject.SetActive(false);
-            TxtOui.gameObject.SetActive(true);
-            InvisibleWall.SetActive(false);
-            maire.gameObject.SetActive(false);
-            pnj.gameObject.SetActive(true);
-        }
+            Debug.Log("il peux appuyer");
+            if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Accept"))))
+            {
+                Debug.Log("Il a accepter la quete");
+                TxtQuestion.gameObject.SetActive(false);
+                TxtOui.gameObject.SetActive(true);
+                InvisibleWall.SetActive(false);
+                //maire.gameObject.SetActive(false);
+                //pnj.gameObject.SetActive(true);
+            }
 
-        if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Refuse"))))
-        {
-            TxtQuestion.gameObject.SetActive(false);
-            TxtNon.gameObject.SetActive(true);
-            new WaitForSeconds(2f);
-            TxtNon.gameObject.SetActive(false);
-
+            if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Refuse"))))
+            {
+                Debug.Log("Il n'a pas accepter la quete");
+                TxtQuestion.gameObject.SetActive(false);
+                TxtNon.gameObject.SetActive(true);
+                new WaitForSeconds(2f);
+                TxtNon.gameObject.SetActive(false);
+            }
         }
     }
 }
