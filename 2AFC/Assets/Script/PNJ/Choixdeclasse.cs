@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Script;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,13 +10,14 @@ public class Choixdeclasse : MonoBehaviour
     public TextMeshProUGUI TxtQuestion;
     public TextMeshProUGUI TxtOui;
     public TextMeshProUGUI TxtNon;
-  
-
-
+    private GameObject toto;
+    private PlayerStats change;
+    
 
 
     void OnTriggerEnter(Collider other)
     {
+        toto = other.gameObject;
         if (other.gameObject.tag == "boxbody")
         {
             TxtQuestion.gameObject.SetActive(true);
@@ -25,6 +27,7 @@ public class Choixdeclasse : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
+        toto = null;
         if (other.gameObject.tag == "boxbody")
         {
             TxtQuestion.gameObject.SetActive(false);
@@ -39,8 +42,7 @@ public class Choixdeclasse : MonoBehaviour
         {
             TxtQuestion.gameObject.SetActive(false);
             TxtOui.gameObject.SetActive(true);
-            //changer de classe
-            
+            //changer de classe                
         }
 
         if (Input.GetKeyDown((KeyCode)System.Enum.Parse(typeof(KeyCode), PlayerPrefs.GetString("Refuse"))))

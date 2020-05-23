@@ -8,7 +8,7 @@ namespace Script
 {
     public class PlayerStats : MonoBehaviour
     {
-
+        public Skills skill;
         [Header("Player stats")]
         public string PlayerName;
         [SerializeField]
@@ -49,6 +49,16 @@ namespace Script
         void Start()
         {
             //PlayerName = GetComponent<PhotonView>().Owner.NickName;
+        }
+
+        void Update()
+        {
+
+            if(Skills[Skills.Count-1] == skill)
+            {
+                ChangedClass = true;
+            }
+
         }
     }
 }
