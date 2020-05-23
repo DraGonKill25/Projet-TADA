@@ -41,8 +41,8 @@ public class ZombieScript : MonoBehaviour
         Transform target = perso.transform;
         distance = Vector3.Distance(target.position, transform.position);
         
-        Debug.Log(proche);
-        Debug.Log(distance);
+        //Debug.Log(proche);
+        //Debug.Log(distance);
 
 
         if (proche)
@@ -112,6 +112,5 @@ public class ZombieScript : MonoBehaviour
         {
             ZombieAnim.SetInteger("Attack", 0);
         }
-        
     }
 }

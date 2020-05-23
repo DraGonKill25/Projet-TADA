@@ -30,6 +30,9 @@ public class playercontrollerWarrior : MonoBehaviour
     private float nextcast3 = 0;
     private float nextcastblock = 0;
 
+    //voir si il est mort
+    public ViePerso perso;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -97,6 +100,8 @@ public class playercontrollerWarrior : MonoBehaviour
             _velocity.x = Input.GetAxis("Horizontal");
             _velocity.z = Input.GetAxis("Vertical");
         }
+
+        //si il a plus de vie
     }
 
     private void BasicMovement()

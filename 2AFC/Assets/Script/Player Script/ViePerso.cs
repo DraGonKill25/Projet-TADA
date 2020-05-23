@@ -24,4 +24,13 @@ public class ViePerso : MonoBehaviour
     {
         PV -= h;
     }
+
+    public bool IsMyPlayerDead()
+    {
+        if (PV <= 0)
+        {
+            return true;
+        }
+        return false;
+    }
 }

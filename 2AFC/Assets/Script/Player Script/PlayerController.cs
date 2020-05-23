@@ -43,6 +43,10 @@ public class PlayerController : MonoBehaviour
 
     public string Classe = "Apprentice";
 
+    public ViePerso perso;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -110,6 +114,16 @@ public class PlayerController : MonoBehaviour
             _velocity.x = Input.GetAxis("Horizontal");
             _velocity.z = Input.GetAxis("Vertical");
             MyPlayerAnimator.SetInteger("Attack", 5);
+        }
+
+        if (perso.IsMyPlayerDead())
+        {
+            MyPlayerAnimator.SetInteger("Attack", 6);
+        }
+        AnimatorStateInfo info = MyPlayerAnimator.GetCurrentAnimatorStateInfo(1);
+        if (info.IsName("Dead"))
+        {
+            DestroyObject(gameObject);
         }
     }
 
@@ -234,7 +248,7 @@ public class PlayerController : MonoBehaviour
         {
             if (SubPlayers[i].activeSelf)
             {
-                Debug.Log("Found Animator");
+                //Debug.Log("Found Animator");
                 MyCurrentAnimator = SubPlayers[i].GetComponent<Animator>();
             }
 
