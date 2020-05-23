@@ -9,22 +9,22 @@ public class PlayerController : MonoBehaviour
     private CharacterController Player;
     private Animator MyPlayerAnimator;
 
-    public float movementSpeed /*=2f*/;
-    public float rotationSpeed /*=30f*/;
+    private float movementSpeed /*=2f*/;
+    private float rotationSpeed /*=30f*/;
 
     private bool _isGrounded = true;
     private Transform _groundChecker;
-    public float GroundDistance = 1f;
-    public float JumpHeight;
+    private float GroundDistance = 1f;
+    private float JumpHeight;
     private Vector3 _velocity;
-    public float Gravity;
-    public LayerMask Ground;
+    private float Gravity;
+    private LayerMask Ground;
 
     //cooldown on speel and atk
-    public float CooldownTime1 = 2;
-    public float CooldownTime2 = 5;
-    public float CooldownTime3 = 15;
-    public float CooldownTimeblock = 7;
+    private float CooldownTime1 = 2;
+    private float CooldownTime2 = 5;
+    private float CooldownTime3 = 15;
+    private float CooldownTimeblock = 7;
     private float nextcast1 = 0;
     private float nextcast2 = 0;
     private float nextcast3 = 0;
@@ -88,6 +88,7 @@ public class PlayerController : MonoBehaviour
             _velocity.y += Mathf.Sqrt(JumpHeight * -2f * Gravity);
             _velocity.x = Input.GetAxis("Horizontal");
             _velocity.z = Input.GetAxis("Vertical");
+            MyPlayerAnimator.SetInteger("Attack", 5);
         }
     }
 

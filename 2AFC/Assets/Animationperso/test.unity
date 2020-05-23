@@ -503,5 +503,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie2
       objectReference: {fileID: 0}
+    - target: {fileID: 5201565117792928455, guid: ca6ac92a84bc4f240b7bdd721844f1fe,
+        type: 3}
+      propertyPath: viewIdField
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca6ac92a84bc4f240b7bdd721844f1fe, type: 3}
