@@ -6,8 +6,9 @@ using TMPro;
 public class Perte_de_vie : MonoBehaviour
 {
     private int ZombiePV;
-    TextMeshPro myText;
-
+    [SerializeField]
+    private TextMeshPro myText;
+    
     private static Perte_de_vie instance;
 
     public static Perte_de_vie MyInstance
@@ -25,14 +26,13 @@ public class Perte_de_vie : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        myText = GetComponent<TextMeshPro>();
         ZombiePV = 100;
     }
 
     // Update is called once per frame
     void Update()
     {
-        myText.text = "" + ZombiePV;
+        myText.text = PV().ToString();
     }
 
     public void LooseHealth(int h)

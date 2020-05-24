@@ -13,3 +13,16 @@ MonoBehaviour:
   m_Name: MasterManager
   m_EditorClassIdentifier: 
   _gameSettings: {fileID: 11400000, guid: ab2c834afc4b1e04592a89a051e232e4, type: 2}
+  _networkedPrefabs:
+  - Prefab: {fileID: 3941777977099539302, guid: ca6ac92a84bc4f240b7bdd721844f1fe,
+      type: 3}
+    Path: PhotonPrefabs/enemis/Zombie2
+  - Prefab: {fileID: 3565943451466723211, guid: d32d73931997aed47a07bc96631460a6,
+      type: 3}
+    Path: PhotonPrefabs/perso/Player
+  - Prefab: {fileID: 9144464857474699803, guid: 46cdfe960fce1184e901e39c047af46d,
+      type: 3}
+    Path: PhotonPrefabs/PhotonNetworkPlayer
+  - Prefab: {fileID: 7553789887518631790, guid: 8da857cebad01ae4f84977dd7aa892b7,
+      type: 3}
+    Path: PhotonPrefabs/PlayerAvatar

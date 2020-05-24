@@ -4,14 +4,28 @@ using UnityEngine;
 
 public class ZombieScript : MonoBehaviour
 {
-    float speed = 1.5f;
+    float speed = 4f;
     private GameObject perso;
     bool proche = false;
     bool attack = false;
-    Animator ZombieAnim;
-    Perte_de_vie ZombieVie;
+    [SerializeField]
+    private Animator ZombieAnim;
+    [SerializeField]
+    private Perte_de_vie ZombieVie;
+    /*
+    private static ZombieScript instance;
 
-
+    public static ZombieScript MyInstance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<ZombieScript>();
+            }
+            return instance;
+        }
+    }*/
 
     void OnTriggerEnter(Collider other)
     {
@@ -27,8 +41,6 @@ public class ZombieScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ZombieVie = (Perte_de_vie)FindObjectOfType(typeof(Perte_de_vie));
-        ZombieAnim = GetComponent<Animator>();
         ZombieAnim.SetFloat("Speed", 0);
         ZombieAnim.SetInteger("Attack", 0);
     }
@@ -49,11 +61,11 @@ public class ZombieScript : MonoBehaviour
             distance = Vector3.Distance(target.position, transform.position);
 
             attack = true;
-            if (distance < 2)
+            if (distance < 4)
             {
                 ZombieAnim.SetFloat("Speed", 0);
                 TurnTowardTarget(transform, target);
-                
+
                 StartAttack();
             }
             else
@@ -66,11 +78,13 @@ public class ZombieScript : MonoBehaviour
 
         //si il a plus de vie
         if (ZombieVie.IsZombieDead()){
+            Debug.Log("Zombi dead");
             ZombieAnim.SetInteger("Attack", 2);
         }
         AnimatorStateInfo info = ZombieAnim.GetCurrentAnimatorStateInfo(1);
         if (info.IsName("Dead")){
-            Destroy(this.gameObject);
+            Debug.Log("supposed to be destroyed");
+            ZombieAnim.gameObject.SetActive(false);
         }
     }
 
