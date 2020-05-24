@@ -10,6 +10,10 @@ public class ViePerso : MonoBehaviour
     private TextMeshPro myText;
     private int saveMaxHP;
 
+    //regen de vie
+    public float CooldownTime = 10;
+    private float nextcast = 0;    
+
     private static ViePerso instance;
 
     public static ViePerso MyInstance
@@ -38,6 +42,12 @@ public class ViePerso : MonoBehaviour
         if(saveMaxHP < PV)
         {
             saveMaxHP = PV;
+        }
+
+        if (Time.time > nextcast)
+        {
+            PV += 5;
+            nextcast = Time.time + CooldownTime;
         }
     }
 

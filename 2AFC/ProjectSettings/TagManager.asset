@@ -10,6 +10,11 @@ TagManager:
   - KeybindManager
   - ManagerKeybinds
   - Music
+  - PNJPreist
+  - PNJSorcier
+  - PNJWarrior
+  - PNJArcher
+  - BoxEnnemi
   layers:
   - Default
   - TransparentFX
