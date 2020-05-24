@@ -15,6 +15,7 @@ TagManager:
   - PNJWarrior
   - PNJArcher
   - BoxEnnemi
+  - garde
   layers:
   - Default
   - TransparentFX

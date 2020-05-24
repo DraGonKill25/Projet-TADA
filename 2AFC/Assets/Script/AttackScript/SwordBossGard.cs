@@ -7,6 +7,7 @@ public class SwordBossGard : MonoBehaviour
     public GameObject Garde;
     Animator anim;
     ViePerso MyPlayerVie;
+    
 
 
     // Start is called before the first frame update
