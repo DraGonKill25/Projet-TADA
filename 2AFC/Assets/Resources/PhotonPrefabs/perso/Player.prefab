@@ -3555,6 +3555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText: {fileID: 254220078164064240}
+  CooldownTime: 10
 --- !u!1 &3608941932774889010
 GameObject:
   m_ObjectHideFlags: 0
