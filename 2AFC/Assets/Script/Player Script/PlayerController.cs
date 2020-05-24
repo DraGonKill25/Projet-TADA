@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private Animator MyPlayerAnimator;
 
     [SerializeField]
-    private Rigidbody rigidbody;
+    private Rigidbody rb;
     [SerializeField]
     private AudioSource audiosrc;
 
@@ -40,12 +40,6 @@ public class PlayerController : MonoBehaviour
     private float nextcastblock = 0;
 
     private bool isMoving;
-
-    public string Classe = "Apprentice";
-    [HideInInspector]
-    public ViePerso perso;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -89,7 +83,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (rigidbody.velocity.x != 0)
+        if (rb.velocity.x != 0)
             isMoving = true;
         else
             isMoving = false;
@@ -116,17 +110,19 @@ public class PlayerController : MonoBehaviour
             MyPlayerAnimator.SetInteger("Attack", 5);
         }
 
-        Debug.Log(perso.ReturnPV());
-        if (perso.ReturnPV() <= 0)
+        if (ViePerso.MyInstance.IsMyPlayerDead())
         {
+            Debug.Log("Is dead");
             MyPlayerAnimator.SetInteger("Attack", 6);
+            new WaitForSeconds(1f);
         }
         AnimatorStateInfo info = MyPlayerAnimator.GetCurrentAnimatorStateInfo(1);
         if (info.IsName("Dead"))
         {
-            //DestroyObject(gameObject);
-            transform.position = new Vector3(91.7f, -5.55f);
-            perso.ResetHP();
+            Debug.Log("tp dead");
+            Vector3 tpvillage = new Vector3(1000f, 250f, -321f);
+            transform.position = tpvillage;
+            ViePerso.MyInstance.ResetHP();
         }
     }
 

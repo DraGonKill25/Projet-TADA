@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Perte_de_vie : MonoBehaviour
 {
     private int ZombiePV;
-    TextMesh myText;
+    TextMeshPro myText;
 
     // Start is called before the first frame update
     void Start()
     {
-        myText = GetComponent<TextMesh>();
+        myText = GetComponent<TextMeshPro>();
         ZombiePV = 100;
     }
 

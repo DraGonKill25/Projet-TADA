@@ -27,7 +27,7 @@ public class HandCollider2 : MonoBehaviour
             if (info.IsName("Z_Attack"))
             {
                 Debug.Log("est en train d'attaquer");
-                MyPlayerVie.LooseHealth(2);
+                MyPlayerVie.LooseHealth(10);
             }
         }
     }

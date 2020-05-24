@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ZombieScript : MonoBehaviour
 {
-    float speed = 0.7f;
+    float speed = 1.5f;
     private GameObject perso;
     bool proche = false;
     bool attack = false;
@@ -37,9 +37,6 @@ public class ZombieScript : MonoBehaviour
     //[System.Obsolete]
     void Update()
     {
-        float distance;
-        Transform target = perso.transform;
-        distance = Vector3.Distance(target.position, transform.position);
         
         //Debug.Log(proche);
         //Debug.Log(distance);
@@ -47,6 +44,10 @@ public class ZombieScript : MonoBehaviour
 
         if (proche)
         {
+            float distance;
+            Transform target = perso.transform;
+            distance = Vector3.Distance(target.position, transform.position);
+
             attack = true;
             if (distance < 2)
             {
@@ -69,7 +70,7 @@ public class ZombieScript : MonoBehaviour
         }
         AnimatorStateInfo info = ZombieAnim.GetCurrentAnimatorStateInfo(1);
         if (info.IsName("Dead")){
-            DestroyObject(gameObject);
+            Destroy(gameObject);
         }
     }
 

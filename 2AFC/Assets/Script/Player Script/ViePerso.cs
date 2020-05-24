@@ -1,17 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ViePerso : MonoBehaviour
 {
     private int PV;
-    TextMesh myText;
+    [SerializeField]
+    private TextMeshPro myText;
     private int saveMaxHP;
+
+    private static ViePerso instance;
+
+    public static ViePerso MyInstance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<ViePerso>();
+            }
+            return instance;
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        myText = GetComponent<TextMesh>();
         PV = 100;
         saveMaxHP = PV;
     }
@@ -19,7 +34,6 @@ public class ViePerso : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(PV);
         myText.text = "" + PV;
         if(saveMaxHP < PV)
         {
