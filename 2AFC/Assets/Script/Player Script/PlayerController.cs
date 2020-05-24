@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("Is dead");
             MyPlayerAnimator.SetInteger("Attack", 6);
-            new WaitForSeconds(1f);
+            new WaitForSeconds(3f);
         }
         AnimatorStateInfo info = MyPlayerAnimator.GetCurrentAnimatorStateInfo(1);
         if (info.IsName("Dead"))

@@ -8,6 +8,20 @@ public class Perte_de_vie : MonoBehaviour
     private int ZombiePV;
     TextMeshPro myText;
 
+    private static Perte_de_vie instance;
+
+    public static Perte_de_vie MyInstance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<Perte_de_vie>();
+            }
+            return instance;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +47,10 @@ public class Perte_de_vie : MonoBehaviour
             return true;
         }
         return false;
+    }
+
+    public int PV()
+    {
+        return ZombiePV;
     }
 }

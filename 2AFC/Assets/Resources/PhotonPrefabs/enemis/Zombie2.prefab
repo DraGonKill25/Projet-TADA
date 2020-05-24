@@ -1160,7 +1160,7 @@ GameObject:
   - component: {fileID: 3246996750314152925}
   m_Layer: 0
   m_Name: ColliderHead
-  m_TagString: Untagged
+  m_TagString: BoxEnnemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1262,7 +1262,7 @@ GameObject:
   - component: {fileID: 3246996750809993805}
   m_Layer: 0
   m_Name: ColliderBody
-  m_TagString: Untagged
+  m_TagString: BoxEnnemi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1303,6 +1303,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3246996750929733194}
+  - component: {fileID: 4998523631427813750}
   m_Layer: 0
   m_Name: Vie
   m_TagString: Untagged
@@ -1325,6 +1326,19 @@ Transform:
   m_Father: {fileID: 435064308760324653}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4998523631427813750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3246996750929733195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5060c8f948dc7438d595f9185e01ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeTxt: {fileID: 6946752354808324318}
 --- !u!1 &3567250699129541956
 GameObject:
   m_ObjectHideFlags: 0

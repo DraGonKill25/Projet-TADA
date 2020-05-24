@@ -70,7 +70,7 @@ public class ZombieScript : MonoBehaviour
         }
         AnimatorStateInfo info = ZombieAnim.GetCurrentAnimatorStateInfo(1);
         if (info.IsName("Dead")){
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
     }
 
