@@ -10,21 +10,21 @@ public class ManagerSettings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        KeybindManager.MyInstance.BindKey("Forward", KeyCode.Z);
-        KeybindManager.MyInstance.BindKey("Back", KeyCode.S);
-        KeybindManager.MyInstance.BindKey("Left", KeyCode.Q);
-        KeybindManager.MyInstance.BindKey("Right", KeyCode.D);
-        KeybindManager.MyInstance.BindKey("Jump", KeyCode.Space);
-        KeybindManager.MyInstance.BindKey("Pause", KeyCode.Escape);
-        KeybindManager.MyInstance.BindKey("SkillTree", KeyCode.Tab);
-        KeybindManager.MyInstance.BindKey("Cursor", KeyCode.M);
-        KeybindManager.MyInstance.BindKey("Run", KeyCode.LeftShift);
-        KeybindManager.MyInstance.BindKey("Action_1", KeyCode.A);
-        KeybindManager.MyInstance.BindKey("Action_2", KeyCode.E);
-        KeybindManager.MyInstance.BindKey("Action_3", KeyCode.R);
-        KeybindManager.MyInstance.BindKey("Action_4", KeyCode.F);
-        KeybindManager.MyInstance.BindKey("Accept", KeyCode.O);
-        KeybindManager.MyInstance.BindKey("Refuse", KeyCode.N);
+        PlayerPrefs.SetString("Forward", "Z");
+        PlayerPrefs.SetString("Back", "S");
+        PlayerPrefs.SetString("Left", "Q");
+        PlayerPrefs.SetString("Right", "D");
+        PlayerPrefs.SetString("Jump", "Space");
+        PlayerPrefs.SetString("Pause", "Escape");
+        PlayerPrefs.SetString("SkillTree", "Tab");
+        PlayerPrefs.SetString("Cursor", "M");
+        PlayerPrefs.SetString("Run", "LeftShift");
+        PlayerPrefs.SetString("Action_1", "A");
+        PlayerPrefs.SetString("Action_2", "E");
+        PlayerPrefs.SetString("Action_3", "R");
+        PlayerPrefs.SetString("Action_4", "F");
+        PlayerPrefs.SetString("Accept", "O");
+        PlayerPrefs.SetString("Refuse", "N");
 
         audioMixer.SetFloat("mastervolume", PlayerPrefs.GetFloat("mastervolume"));
         audioMixer.SetFloat("musicvolume", PlayerPrefs.GetFloat("musicvolume"));
