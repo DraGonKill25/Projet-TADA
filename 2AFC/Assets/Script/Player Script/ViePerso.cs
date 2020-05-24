@@ -44,9 +44,13 @@ public class ViePerso : MonoBehaviour
             saveMaxHP = PV;
         }
 
-        if (Time.time > nextcast)
+        if (Time.time > nextcast && PV <saveMaxHP)
         {
             PV += 5;
+            if(PV > saveMaxHP)
+            {
+                PV = saveMaxHP;
+            }
             nextcast = Time.time + CooldownTime;
         }
     }

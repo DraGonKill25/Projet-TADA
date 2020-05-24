@@ -49,7 +49,6 @@ public class ZombieScript : MonoBehaviour
     //[System.Obsolete]
     void Update()
     {
-        
         //Debug.Log(proche);
         //Debug.Log(distance);
 

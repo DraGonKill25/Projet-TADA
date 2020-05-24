@@ -46,18 +46,16 @@ namespace Script
         void Start()
         {
             PlayerName = GetComponent<PhotonView>().Owner.NickName;
-            
-            
         }
         void Update()
         {
 
-            if(Skills[Skills.Count-1] == skill)
+            if(Skills.Count > 0 && Skills[Skills.Count - 1] == skill)
             {
                 ChangedClass = true;
             }
 
-            if (Skills[Skills.Count - 1].Description == "Change")
+            if (Skills.Count > 0  && Skills[Skills.Count - 1].Description == "Change")
             {
                 classe.EvolutionMade.Add(Skills[Skills.Count-1].name);
                 

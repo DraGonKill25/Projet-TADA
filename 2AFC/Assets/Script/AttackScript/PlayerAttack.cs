@@ -11,7 +11,6 @@ public class PlayerAttack : MonoBehaviour
         if (other.gameObject.tag == "BoxEnnemi")
         {
             Perte_de_vie Vie_Ennemie = other.gameObject.GetComponentInParent<Perte_de_vie>();
-            Debug.Log("est en train d'attaquer");
             Vie_Ennemie.LooseHealth(50);
         }
     }
