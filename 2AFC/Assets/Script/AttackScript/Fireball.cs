@@ -32,9 +32,6 @@ public class Fireball : MonoBehaviour
             Rigidbody rb = fleche.GetComponent<Rigidbody>();
             rb.velocity = -player.transform.up * shootforce;
             special = false;
-            
-
-
         }
         else if (!special)
         {

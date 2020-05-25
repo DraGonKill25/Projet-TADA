@@ -9,8 +9,7 @@ public class PNJAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int toto = Random.Range(1, 3);
-
-        AnimPNJ.SetInteger("Attack", toto);
+        /*int toto = Random.Range(1, 3);
+        AnimPNJ.SetInteger("Attack", toto);*/
     }
 }

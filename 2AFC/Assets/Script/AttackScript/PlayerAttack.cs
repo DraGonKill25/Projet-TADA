@@ -1,22 +1,27 @@
-﻿using System.Collections;
+﻿using Script;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
     public GameObject Player;
+    public PlayerStats stat;
        
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "BoxEnnemi" || other.gameObject.tag == "garde")
+        int damage = (int)(stat.item.Damage * 0.01) + (int)stat.Attributes[1].amount;
+
+        if (other.gameObject.tag == "BoxEnnemi")
         {
             Perte_de_vie Vie_Ennemie = other.gameObject.GetComponentInParent<Perte_de_vie>();
-            VieGARDE Vie_Garde = other.gameObject.GetComponentInParent<VieGARDE>();
-            if(Vie_Ennemie != null)
-                Vie_Ennemie.LooseHealth(50);
+            Vie_Ennemie.LooseHealth(damage);
+        }
 
-            if (Vie_Garde != null)
-                Vie_Garde.LooseHealth(50);
+        if(other.gameObject.tag == "garde")
+        {
+            VieGARDE Vie_Garde = other.gameObject.GetComponentInParent<VieGARDE>();
+            Vie_Garde.LooseHealth(damage);  
         }
     }
 }

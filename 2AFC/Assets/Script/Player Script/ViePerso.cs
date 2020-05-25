@@ -16,6 +16,18 @@ public class ViePerso : MonoBehaviour
 
     private static ViePerso instance;
 
+    public int pV
+    {
+        get => PV;
+        set => PV = value;
+    }
+
+    public int SaveMaxHP
+    {
+        get => saveMaxHP;
+        set => saveMaxHP = value;
+    }
+
     public static ViePerso MyInstance
     {
         get
