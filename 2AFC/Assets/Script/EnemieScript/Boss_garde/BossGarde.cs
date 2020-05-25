@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossGarde : MonoBehaviour
 {
-    float speed = 4f;
+    float speed = 12f;
     private GameObject perso;
     bool proche = false;
     bool attack = false;
@@ -75,7 +75,7 @@ public class BossGarde : MonoBehaviour
         }
 
         //si il a plus de vie
-        if (GardeVIE.IsZombieDead())
+        if (GardeVIE.IsDead())
         {
             Debug.Log("Zombi dead");
             GardeAnim.SetInteger("Attack", 3);

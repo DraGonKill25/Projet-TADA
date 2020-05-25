@@ -26,7 +26,7 @@ public class VieGARDE: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GardePV = 100;
+        GardePV = 520;
     }
 
     // Update is called once per frame
@@ -40,7 +40,7 @@ public class VieGARDE: MonoBehaviour
         GardePV -= h;
     }
 
-    public bool IsZombieDead()
+    public bool IsDead()
     {
         if (GardePV <= 0)
         {

@@ -11,7 +11,7 @@ public class ViePerso : MonoBehaviour
     private int saveMaxHP;
 
     //regen de vie
-    public float CooldownTime = 10;
+    private float CooldownTime = 10;
     private float nextcast = 0;    
 
     private static ViePerso instance;
