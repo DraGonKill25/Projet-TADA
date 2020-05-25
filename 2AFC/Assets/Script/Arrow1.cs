@@ -32,14 +32,9 @@ public class Arrow1 : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-
-
         Debug.Log(other.collider.tag);
-        
-        
         if (other.collider.tag != "Arrow" && other.collider.tag != "Player" && other.collider.tag != "SubPlayer")
         {
-           
             hit = true;
             Stick();
         }

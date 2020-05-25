@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    public GameObject Player;
     public PlayerStats stat;
        
     public void OnTriggerEnter(Collider other)
