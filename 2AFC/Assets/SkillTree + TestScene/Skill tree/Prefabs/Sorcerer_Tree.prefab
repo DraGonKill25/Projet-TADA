@@ -8236,7 +8236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7888f06e52786ff46bdbdb76d9d16bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skill: {fileID: 11400000, guid: d12d409e0de6fa147a9e7be958da2dcf, type: 2}
+  skill: {fileID: 11400000, guid: 11e63f4b239edb943a33cc76ac4975f8, type: 2}
   skillName: {fileID: 451302990947206297}
   skillDescription: {fileID: 0}
   skillIcon: {fileID: 5994069887570752543}

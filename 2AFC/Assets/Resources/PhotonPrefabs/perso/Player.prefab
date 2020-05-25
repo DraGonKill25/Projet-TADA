@@ -3537,7 +3537,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 8974746854876173411}
   canvas: {fileID: 5727238399751999656}
-  stats: {fileID: 8974746854876173411}
 --- !u!82 &3561465964134469643
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10814,6 +10813,11 @@ PrefabInstance:
       propertyPath: PlayerHandler
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9216912492258987936, guid: 21784a78213555a448aedccd01b353b3,
+        type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 8974746854876173411}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21784a78213555a448aedccd01b353b3, type: 3}
 --- !u!114 &6246978108435357143 stripped
