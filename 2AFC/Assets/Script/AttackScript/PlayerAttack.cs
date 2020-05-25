@@ -13,11 +13,5 @@ public class PlayerAttack : MonoBehaviour
             Perte_de_vie Vie_Ennemie = other.gameObject.GetComponentInParent<Perte_de_vie>();
             Vie_Ennemie.LooseHealth(50);
         }
-
-        if(other.gameObject.tag == "garde")
-        {
-            VieGARDE Vie_Ennemie = other.gameObject.GetComponentInParent<VieGARDE>();
-            Vie_Ennemie.LooseHealth(50);
-        }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossGarde : MonoBehaviour
 {
-    float speed = 12f;
+    float speed = 4f;
     private GameObject perso;
     bool proche = false;
     bool attack = false;
