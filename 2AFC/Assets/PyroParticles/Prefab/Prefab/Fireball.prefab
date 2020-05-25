@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -2779832619068192986}
   - component: {fileID: 1656356300871781351}
   - component: {fileID: 6172797519318685561}
+  - component: {fileID: 1504486235585861617}
   m_Layer: 8
   m_Name: Fireball
   m_TagString: Arrow
@@ -380,6 +381,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1504486235585861617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baeb9d0cf60a8274d9f49dc377d06b67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 3565943451466723211, guid: 3329efa0f8dbcc34180148b0fe9fe9d3, type: 3}
 --- !u!1 &130866
 GameObject:
   m_ObjectHideFlags: 0
