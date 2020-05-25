@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Script;
 using UnityEngine;
 using TMPro;
 
@@ -9,6 +10,8 @@ public class ViePerso : MonoBehaviour
     [SerializeField]
     private TextMeshPro myText;
     private int saveMaxHP;
+
+    [SerializeField] private PlayerStats stats;
 
     //regen de vie
     private float CooldownTime = 10;
@@ -43,13 +46,16 @@ public class ViePerso : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PV = 100;
+        PV = stats.Attributes[0].amount;
         saveMaxHP = PV;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (stats.Attributes[0].amount > saveMaxHP)
+            saveMaxHP = stats.Attributes[0].amount;
+        
         myText.text = "" + PV;
         if(saveMaxHP < PV)
         {

@@ -37,7 +37,7 @@ public class Arrow1 : MonoBehaviour
         Debug.Log(other.collider.tag);
         
         
-        if (other.collider.tag != "Arrow" && other.collider.tag != "Player")
+        if (other.collider.tag != "Arrow" && other.collider.tag != "Player" && other.collider.tag != "SubPlayer")
         {
            
             hit = true;
