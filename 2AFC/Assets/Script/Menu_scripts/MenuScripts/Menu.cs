@@ -28,4 +28,9 @@ public class Menu : MonoBehaviour
         Debug.Log("Quit!");
         Application.Quit();
     }
+
+    public void SoloPlay()
+    {
+        SceneManager.LoadScene(4);
+    }
 }

@@ -49,7 +49,7 @@ namespace Script
         }
         void Update()
         {
-            UpdatePoint(10);
+            UpdatePoint(1);
 
             if(Skills.Count > 0 && Skills[Skills.Count - 1] == skill)
             {
