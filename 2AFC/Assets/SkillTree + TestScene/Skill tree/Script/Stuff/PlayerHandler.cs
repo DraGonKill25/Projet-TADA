@@ -11,6 +11,8 @@ namespace Script
 
         [SerializeField] private GameObject canvas;
         private bool displayCanvas;
+        [SerializeField]
+        private PlayerStats stats;
 
 
         void Start()
@@ -26,8 +28,36 @@ namespace Script
             {
                 if (canvas)
                 {
-                    displayCanvas = !displayCanvas;
-                    canvas.gameObject.SetActive(displayCanvas);
+                    if(stats.classe.Name == "Aventurier")
+                    {
+                        displayCanvas = !displayCanvas;
+
+                        canvas.gameObject.transform.GetChild(0).gameObject.SetActive(displayCanvas);
+                    }
+                    if (stats.classe.Name == "Archer")
+                    {
+                        displayCanvas = !displayCanvas;
+
+                        canvas.gameObject.transform.GetChild(1).gameObject.SetActive(displayCanvas);
+                    }
+                    if (stats.classe.Name == "Epéiste")
+                    {
+                        displayCanvas = !displayCanvas;
+
+                        canvas.gameObject.transform.GetChild(4).gameObject.SetActive(displayCanvas);
+                    }
+                    if (stats.classe.Name == "Mage")
+                    {
+                        displayCanvas = !displayCanvas;
+
+                        canvas.gameObject.transform.GetChild(3).gameObject.SetActive(displayCanvas);
+                    }
+                    if (stats.classe.Name == "Prêtre")
+                    {
+                        displayCanvas = !displayCanvas;
+
+                        canvas.gameObject.transform.GetChild(2).gameObject.SetActive(displayCanvas);
+                    }
                 }
             }
         }

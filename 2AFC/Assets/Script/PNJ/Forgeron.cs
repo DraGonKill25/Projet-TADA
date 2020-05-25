@@ -11,13 +11,13 @@ public class Forgeron : MonoBehaviour
     {
         txt.SetActive(true);
         new WaitForSeconds(2f);
-        other.gameObject.transform.GetChild(5).transform.GetChild(4).gameObject.SetActive(true);
+        other.gameObject.transform.GetChild(5).transform.GetChild(3).gameObject.SetActive(true);
     }
 
 
     void OnTriggerExit(Collider other)
     {
         txt.SetActive(false);
-        other.gameObject.transform.GetChild(5).transform.GetChild(4).gameObject.SetActive(false);
+        other.gameObject.transform.GetChild(5).transform.GetChild(3).gameObject.SetActive(false);
     }
 }
